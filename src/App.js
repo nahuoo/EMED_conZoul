@@ -4,6 +4,8 @@ import { BrowserRouter, Route, NavLink } from 'react-router-dom'
 import IndexNavbar from "./components/navbar.js";
 import Header from "./components/header.js";
 import Footer from "./components/Footer.js";
+import "./assets/css/bootstrap.min.css";
+import "./assets/scss/now-ui-kit.scss";
 // import Mapa from "./components/Mapa";
 // import Carousel from "./components/Carousel";
 // import Formulario from "./components/Carousel";
