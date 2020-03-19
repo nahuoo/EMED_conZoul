@@ -1,12 +1,13 @@
 import React from 'react';
 
 //Los componentes:
-import Navbar from "components/Navbar.js";
-import Header from "components/Header.js";
-import Footer from "components/Footer.js";
-import Mapa from "components/Mapa.js";
-import Carousel from "components/Carousel.js";
-import Formulario from "components/Carousel.js";
+import Navbar from "components/Navbar";
+import Header from "components/Header";
+import Footer from "components/Footer";
+import Mapa from "components/Mapa";
+import Carousel from "components/Carousel";
+import Formulario from "components/Carousel";
+import Texto from "components/Texto";
 
 
 function App() {
