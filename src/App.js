@@ -1,15 +1,12 @@
 import React from 'react';
 
 //Los componentes:
-import Navbar from "components/Navbars/IndexNavbar.js";
-import Header from "components/Headers/IndexHeader.js";
-import DarkFooter from "components/Footers/DarkFooter.js";
-import Tabs from "./index-sections/Tabs.js";
-import Carousel from "./index-sections/Carousel.js";
-
-
-
-
+import Navbar from "components/Navbar.js";
+import Header from "components/Header.js";
+import Footer from "components/Footer.js";
+import Mapa from "components/Mapa.js";
+import Carousel from "components/Carousel.js";
+import Formulario from "components/Carousel.js";
 
 
 function App() {
@@ -35,10 +32,10 @@ function App() {
         <br />
         <Carousel />
         <Texto />
-        <Examples />
-        <Tabs />
+        <Mapa />
+        <Formulario />
       </div>
-      <DarkFooter />
+      <Footer />
     </>
   );
 }
