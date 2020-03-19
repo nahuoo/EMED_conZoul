@@ -3,22 +3,21 @@ import React from "react";
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
-
-
 function Texto() {
   return (
     <div className="section section-about-us">
       <Container>
         <Row>
-          
           <Col className="ml-auto mr-auto text-center" md="8">
-          <img
-            alt="Uno electromedicina"
-            width="150"
-            src={require("assets/img/logonavidad.jpg")}
-          ></img><h2 className="title">Quienes somos?</h2>
+            <img
+              alt="Uno electromedicina"
+              width="150"
+              src={require("assets/img/logonavidad.jpg")}
+            ></img>
+            <h2 className="title">Quienes somos?</h2>
             <h3 className="description">
-              Uno Electromedicina se dedica al servicio técnico y venta de equipos e insumos de laboratorio.
+              Uno Electromedicina se dedica al servicio técnico y venta de
+              equipos e insumos de laboratorio.
             </h3>
           </Col>
         </Row>
@@ -44,13 +43,14 @@ function Texto() {
               <div
                 className="image-container image-right"
                 style={{
-                  backgroundImage: "url(" + require("assets/img/taller2.jpg") + ")"
+                  backgroundImage:
+                    "url(" + require("assets/img/taller2.jpg") + ")"
                 }}
               ></div>
               <h3>Una breve historia</h3>
               <p>
-                Fue fundada en  ....  por Jose Sigismondi
-                njkaedlakenakldenk aeidjaed jaied adjanedlkajed aed.
+                Fue fundada en .... por Jose Sigismondi njkaedlakenakldenk
+                aeidjaed jaied adjanedlkajed aed.
               </p>
               <p>
                 asdasdasdaskdnaskldnaslkdmjalksdklamckmaslkmcamslkcamsklmaksldmlkalkamdmake

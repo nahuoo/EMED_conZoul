@@ -17,22 +17,24 @@ import {
 } from "reactstrap";
 // ITEMS DE NAVBAR
 
-function imagen(){
- return <img
-                alt="Logo UNO"
-                width="50"
-                src={require("assets/img/logouno.png")}
-              />
-};
+function imagen() {
+  return (
+    <img alt="Logo UNO" width="50" src={require("assets/img/logouno.png")} />
+  );
+}
 
 const imagenScroll = () => {
   if (
     document.documentElement.scrollTop > 399 ||
-    document.body.scrollTop > 399){imagen()}};
+    document.body.scrollTop > 399
+  ) {
+    imagen();
+  }
+};
 
-   function imagenAparece(){
-      return(imagenScroll)
-    };
+function imagenAparece() {
+  return imagenScroll;
+}
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -69,12 +71,10 @@ function IndexNavbar() {
       ) : null}
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
-       
           <div className="navbar-translate">
-        <br />
-            <NavbarBrand >
-            <img 
-                
+            <br />
+            <NavbarBrand>
+              <img
                 alt="Logo UNO"
                 width="50"
                 src={require("assets/img/logouno.png")}
@@ -142,7 +142,7 @@ function IndexNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-             
+
               <NavItem>
                 <NavLink
                   href="https://www.facebook.com/uno.electromedicina/"

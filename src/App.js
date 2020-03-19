@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 //Los componentes:
 import Navbar from "components/Navbar";
@@ -9,11 +9,8 @@ import Carousel from "components/Carousel";
 import Formulario from "components/Carousel";
 import Texto from "components/Texto";
 
-
 function App() {
-
-    
-       React.useEffect(() => {
+  React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -28,7 +25,7 @@ function App() {
     <>
       <Navbar />
       <Header />
-     <div className="main">
+      <div className="main">
         <br />
         <br />
         <Carousel />
@@ -40,7 +37,5 @@ function App() {
     </>
   );
 }
-
-
 
 export default App;
