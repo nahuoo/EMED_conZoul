@@ -142,24 +142,7 @@ function IndexNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem>
-                {/* <Button
-                  className="nav-link btn-neutral"
-                  color="info"
-                  href=""
-                  id="upgrade-to-pro"
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                  <p>Ingresar</p>
-                </Button>
-                
-                <UncontrolledTooltip target="#upgrade-to-pro">
-                  Bienvenido
-                </UncontrolledTooltip>
-                */}
-              </NavItem>
-
+             
               <NavItem>
                 <NavLink
                   href="https://www.facebook.com/uno.electromedicina/"
