@@ -19,7 +19,7 @@ import {
 
 function imagen() {
   return (
-    <img alt="Logo UNO" width="50" src={require("assets/img/logouno.png")} />
+    <img alt="Logo UNO" width="50" src={require("../assets/img/logouno.png")} />
   );
 }
 
@@ -77,7 +77,7 @@ function IndexNavbar() {
               <img
                 alt="Logo UNO"
                 width="50"
-                src={require("assets/img/logouno.png")}
+                src={require("../assets/img/logouno.png")}
               />
               Uno electromedicina
             </NavbarBrand>
@@ -177,4 +177,4 @@ function IndexNavbar() {
   );
 }
 
-export default Navbar;
+export default IndexNavbar;

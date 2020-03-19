@@ -33,7 +33,7 @@ function Header() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/mardel.jpg") + ")"
+            backgroundImage: "url(" + require("../assets/img/papa1.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
@@ -43,7 +43,7 @@ function Header() {
             <img
               alt="Logo UNO"
               width="150"
-              src={require("assets/img/logouno.png")}
+              src={require("../assets/img/logouno.png")}
             />
 
             <h2 className="h1-seo">Venta y servicio técnico de laboratorios</h2>
