@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
-import { Button, Container, Row } from "reactstrap";
+import { Button, Container, 
+  //Row 
+} from "../assets/css/css";
 
 function Mapa() {
   return (

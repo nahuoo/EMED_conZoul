@@ -2,16 +2,16 @@ import React from "react";
 import axios from "axios";
 import {
   Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  //Input,
+ // InputGroupAddon,
+ // InputGroupText,
+ // InputGroup,
   Container,
-  Row,
-  Col,
+ // Row,
+ // Col,
   Modal,
-  ModalBody
-} from "reactstrap";
+  //ModalBody
+} from "../assets/css/css";
 
 function handleSubmit(e) {
   return e.preventDefault();
@@ -48,11 +48,11 @@ function Formulario() {
                   "input-lg" + (firstFocus ? " input-group-focus" : "")
                 }
               >
-                <InputGroupAddon addonType="prepend">
+ {/*             <InputGroupAddon addonType="prepend">
                   <InputGroupText>
                     <i className="now-ui-icons users_circle-08"></i>
                   </InputGroupText>
-                </InputGroupAddon>
+                 </InputGroupAddon>                    */}
                 <Input
                   id="name"
                   placeholder="Nombre..."

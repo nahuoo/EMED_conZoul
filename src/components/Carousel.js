@@ -71,9 +71,6 @@ function CarouselSection() {
               key={item.src}
             >
               <img src={item.src} alt={item.altText} />
-              <div className="carousel-caption d-none d-md-block">
-                <h3>{item.caption}</h3>
-              </div>
             </CarouselItem>
           );
         })}

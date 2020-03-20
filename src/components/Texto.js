@@ -1,7 +1,10 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Container, 
+  //Row, 
+  //Col 
+} from "../assets/css/css";
 
 function Texto() {
   return (
