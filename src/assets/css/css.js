@@ -4,11 +4,13 @@ import styled from 'styled-components'
 
 var colorPrincipal = '#1247dacc' // Azul
 
-const Button = styled.button `
- Arial, sans-serif
+ //  Input, Select, Textarea
+
+const Button = styled.button ` 
+ font: Arial, sans-serif
     `;
 
-  //  Input, Select, Textarea
+ 
 const Titulo = styled.h1 `
     font-weight: 400;
     font-size: 3.5em;
@@ -212,4 +214,3 @@ p{
 
 */
 
-};

@@ -1,15 +1,16 @@
 import React from "react";
-import { BrowserRouter, Route, NavLink } from 'react-router-dom'
+
 //Los componentes:
-import IndexNavbar from "./components/navbar.js";
+
 import Header from "./components/header.js";
-import Footer from "./components/Footer.js";
+
 
 // import Mapa from "./components/Mapa";
 // import Carousel from "./components/Carousel";
 // import Formulario from "./components/Carousel";
 // import Texto from "./components/Texto";
 
+/*
 function App() {
 
   React.useEffect(() => {
@@ -33,10 +34,24 @@ function App() {
       <Route path="/contacto" render={} />
       <Route path="/sobrenosotros" render={} />
       <Route path="/serviciotecnico" render={} />
-      <Route path="/productos" render={} /> */}
+      <Route path="/productos" render={} /> }
       <Footer />
     </BrowserRouter>
   );
 }
+
+
+*/
+
+
+function App() {
+  
+return(
+
+
+  <Header />
+
+);
+};
 
 export default App;
