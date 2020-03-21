@@ -10,6 +10,7 @@ import { Switch, Route } from 'react-router-dom'
 import NavBar from './components/navbar'
 
 
+
 function App() {
 
   
@@ -32,4 +33,8 @@ function App() {
   );
 }
 
-export default App;
+export default App
+
+
+
+

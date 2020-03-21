@@ -1,8 +1,60 @@
 import React from "react";
+import styled from 'styled-components';
+import fotoTaller from '../assets/img/taller.jpg';
+//styles
+  
+const Container = styled.div `
 
-// reactstrap components
-import css 
- from "../assets/css/css";
+  z-index: 1;
+  text-align: center;
+  position:static;
+  justify-content: justify;
+`;    
+
+const PageHeader = styled.div `
+
+  color: rgba(255, 255, 255, 0.5); 
+  position: relative;
+  background-image: url("${fotoTaller}");
+  height: 680px; /* You must set a specified height */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+`;
+
+const HeaderImage = styled.div `
+
+  height: 200px; 
+  
+
+   
+`;
+const Imagen = styled.img`
+align-content:space-around;
+margin-left: 24px;
+`;
+const H2 = styled.h2`
+font-family: 'Merriweather Sans', sans-serif;
+font-style: italic;
+font-size:38px;
+letter-spacing: 1.5px;
+
+  color: white;
+`;
+const Row = styled.div `
+margin-top: 3%;
+`;
+
+const Button = styled.button `
+  border-width: 1px;
+  border-radius: 30px ;
+  padding: 11px 23px; 
+  background-color: transparent;
+  margin-left: 10px;
+  width:40;
+  color: #1247dacc;
+`;
+
 
 // core components
 const handleClick = () =>
@@ -30,45 +82,38 @@ function Header() {
 
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
-        <div
-          className="page-header-image"
-          style={{
-            backgroundImage: "url(" + require("../assets/img/papa1.jpg") + ")"
-          }}
-          ref={pageHeader}
-        ></div>
-
-        <Container classname="bootstrap-switch-lab justify-content-center">
-          <div>
-            <img
-              alt="Logo UNO"
-              width="150"
-              src={require("../assets/img/logouno.png")}
-            />
-
-            <h2 className="h1-seo">Venta y servicio técnico de laboratorios</h2>
-          </div>
-          <br></br>
-          <br></br>
+      <PageHeader>
+      <HeaderImage ></HeaderImage>
+          <div ref={pageHeader}>
           <Container>
-            <Row>
-              <Col lg="100%" md="12">
-                <Button
-                  lg="100%"
-                  md="20"
-                  width="40"
-                  className="btn-round "
-                  color="info"
-                  onClick={handleClick}
+          <div>
+           <Imagen
+            alt="Logo UNO"
+            
+            width="150"
+            src={require("../assets/img/logouno.png")}
+            />         
+            <H2>Venta y servicio técnico de laboratorios</H2>
+          </div>        
+          <Container>
+            <Row>              
+                <Button                  
+                  onClick={""}
                 >
                   Contáctenos
                 </Button>
-              </Col>
+              
             </Row>
           </Container>
         </Container>
-      </div>
+      
+          
+          </div>
+       
+              
+     
+      </PageHeader>     
+        
     </>
   );
 }
