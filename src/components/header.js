@@ -12,6 +12,7 @@ const Container = styled.div `
 `;    
 
 const PageHeader = styled.div `
+
   color: rgba(255, 255, 255, 0.5); 
   position: relative;
   background-image: url("${fotoTaller}");
@@ -23,7 +24,7 @@ const PageHeader = styled.div `
 
 const HeaderImage = styled.div `
 
-  height: 200px; /* You must set a specified height */
+  height: 200px; 
   
 
    
@@ -33,7 +34,12 @@ align-content:space-around;
 margin-left: 24px;
 `;
 const H2 = styled.h2`
-  color:white;
+font-family: 'Merriweather Sans', sans-serif;
+font-style: italic;
+font-size:38px;
+letter-spacing: 1.5px;
+
+  color: white;
 `;
 const Row = styled.div `
 margin-top: 3%;
