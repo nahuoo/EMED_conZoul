@@ -1,41 +1,34 @@
 import React from "react";
-import { BrowserRouter, Route, NavLink } from 'react-router-dom'
-//Los componentes:
-import IndexNavbar from "./components/navbar.js";
-import Header from "./components/header.js";
-import Footer from "./components/Footer.js";
+import Home from './pages/home'
+import Contact from './pages/contact'
+import Productos from './pages/productos'
+import About from './pages/about'
+import Service from './pages/service'
+import NotFound from './pages/404'
+import Footer from './components/Footer'
+import { Switch, Route } from 'react-router-dom'
+import NavBar from './components/navbar'
 
-// import Mapa from "./components/Mapa";
-// import Carousel from "./components/Carousel";
-// import Formulario from "./components/Carousel";
-// import Texto from "./components/Texto";
 
 function App() {
 
-  React.useEffect(() => {
-
-    document.body.classList.add("index-page");
-    document.body.classList.add("sidebar-collapse");
-    document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-
-    return function cleanup() {
-      document.body.classList.remove("index-page");
-      document.body.classList.remove("sidebar-collapse");
-    };
-  });
+  
   return (
-    <BrowserRouter>
-      <IndexNavbar />
-      <Header />
-      {/* <Route path="/" exact render={navbar} />
-      <Route path="/contacto" render={} />
-      <Route path="/sobrenosotros" render={} />
-      <Route path="/serviciotecnico" render={} />
-      <Route path="/productos" render={} /> */}
+    <div>
+      <NavBar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/service" component={Service} />
+        <Route path="/productos" component={Productos} />
+        <Route component={NotFound} />
+      </Switch>
       <Footer />
-    </BrowserRouter>
+    </div>
+    
+      
+
   );
 }
 
