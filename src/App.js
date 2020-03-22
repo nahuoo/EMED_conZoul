@@ -8,6 +8,14 @@ import Service from './pages/service'
 import NotFound from './pages/404'
 import Footer from './components/Footer'
 import NavBar from './components/navbar'
+import WavesSection from './components/waves'
+import styled from 'styled-components';
+import Texto from './components/Texto';
+
+//const Div = styled.div `
+//  height: 13vh;
+//  background-color: black;
+//`;
 
 function App() {
 
@@ -15,6 +23,7 @@ function App() {
   return (
     <div>
       <NavBar />
+      <Texto />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
@@ -23,6 +32,7 @@ function App() {
         <Route path="/productos" component={Productos} />
         <Route component={NotFound} />
       </Switch>
+      <WavesSection />
       <Footer />
     </div>
     

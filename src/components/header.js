@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
-import fotoTaller from '../assets/img/taller.jpg';
+import fotoTaller from '../assets/img/uno-bg.jpg';
+
 //styles
   
 const Container = styled.div `
@@ -12,15 +13,21 @@ const Container = styled.div `
 `;    
 
 const PageHeader = styled.div `
-
+   
+  
+	margin: 0px; 
+  padding: 0px;
+  border-style: none solid none solid;
+  border-color: #000;
   color: rgba(255, 255, 255, 0.5); 
   position: relative;
   background-image: url("${fotoTaller}");
   height: 680px; /* You must set a specified height */
-  background-position: center; 
+  background-position:center;  
   background-repeat: no-repeat; 
-  background-size: cover;
+  background-size: contain ;
 `;
+
 
 const HeaderImage = styled.div `
 
@@ -57,12 +64,12 @@ const Button = styled.button `
 
 
 // core components
-const handleClick = () =>
+/* const handleClick = () =>
   document.getElementById("name").scrollIntoView({
     behavior: "smooth",
     block: "start"
   });
-
+*/
 function Header() {
   let pageHeader = React.createRef();
 
@@ -83,6 +90,7 @@ function Header() {
   return (
     <>
       <PageHeader>
+      
       <HeaderImage ></HeaderImage>
           <div ref={pageHeader}>
           <Container>

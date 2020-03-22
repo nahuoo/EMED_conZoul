@@ -1,17 +1,27 @@
 import React from "react";
+import styled from "component-styled"
 
-// reactstrap components
-import { Container, 
-  //Row, 
-  //Col 
-} from "../assets/css/css";
+const Section = styled.div`
+.section{
+  padding: 70px 0;
+  position: relative;
+  background: $white-color;
 
+  .category{
+      margin-top: $margin-base-vertical;
+  }
+}
+.col{}
+display: flex;
+  align-items: center; 
+  `;
+  
 function Texto() {
   return (
-    <div className="section section-about-us">
+    <Section>
       <Container>
-        <Row>
-          <Col className="ml-auto mr-auto text-center" md="8">
+        <div>
+          <div className="ml-auto mr-auto text-center" md="8">
             <img
               alt="Uno electromedicina"
               width="150"
@@ -22,8 +32,8 @@ function Texto() {
               Uno Electromedicina se dedica al servicio técnico y venta de
               equipos e insumos de laboratorio.
             </h3>
-          </Col>
-        </Row>
+          </div>
+        </div>
         <div className="separator separator-primary"></div>
         <div className="section-story-overview">
           <Row>
@@ -67,7 +77,7 @@ function Texto() {
           </Row>
         </div>
       </Container>
-    </div>
+    </Section>
   );
 }
 
