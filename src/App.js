@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import NavBar from './components/navbar'
 import Header from './components/header'
 import GlobalStyle from './assets/css/GlobalStyle'
+import Carrousel from './components/Carrousel'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <NavBar />
+      {/* <NavBar />
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -28,7 +29,10 @@ function App() {
         <Route path="/productos" component={Productos} />
         <Route component={NotFound} />
       </Switch>
-      <Footer />
+      <Footer /> */}
+      <Carrousel images={['https://images.pexels.com/photos/3068107/pexels-photo-3068107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                 'https://images.pexels.com/photos/2886284/pexels-photo-2886284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                 'https://images.pexels.com/photos/3617460/pexels-photo-3617460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940']} />
     </div>
     
       
