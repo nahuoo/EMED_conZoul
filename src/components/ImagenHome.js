@@ -1,52 +1,88 @@
 import React from "react";
 import styled from 'styled-components';
-import fotoTaller from '../assets/img/uno-bg.jpg';
+import fotoTaller from '../assets/img/taller.jpg';
+import WavesSection from './waves.js'
 
 //styles
   
+
+
+
+//css
 const Container = styled.div `
 
-  z-index: 1;
-  text-align: center;
+  
+  text-align: left;
   position:static;
   justify-content: justify;
+  margin-top: 20rem;
+  margin-left:1rem;
+
+
 `;    
 
 const PageHeader = styled.div `
-   
-  
-	margin: 0px; 
+
+     
+	margin: 10px, 0px, 0px; 
   padding: 0px;
   border-style: none solid none solid;
   border-color: #000;
   color: rgba(255, 255, 255, 0.5); 
   position: relative;
   background-image: url("${fotoTaller}");
-  height: 680px; /* You must set a specified height */
-  background-position:center;  
+  width: 100%;
+  max-width: 100%;
+  height: auto; 
+  background-position:center; 
+  background-attachment: fixed; 
   background-repeat: no-repeat; 
-  background-size: contain ;
+  background-size: cover ;
+  overflow:hidden;
 `;
 
+const Filtro = styled.div`
 
-const HeaderImage = styled.div `
+background: #16A1B2;
+background-size:cover;
+height:100%;
+margin:0;
+opacity: 25%;
+background-attachment: fixed;
+background-repeat: no-repeat; 
+width: 100%;
+max-width: 100%;
+position: absolute;
 
-  height: 200px; 
-  
 
-   
+
 `;
+
 const Imagen = styled.img`
 align-content:space-around;
 margin-left: 24px;
+margin-top: 15%;
+z-index: 1;
 `;
+
+
 const H2 = styled.h2`
-font-family: 'Merriweather Sans', sans-serif;
-font-style: italic;
-font-size:38px;
+font-family: 'Crete Round', serif;
+
+font-size:4rem;
+letter-spacing: 1.5px;
+z-index: 1;
+color: white;
+`;
+
+
+const H4 = styled.h4`
+font-family: 'Crete Round', serif;
+
+font-size:1rem;
 letter-spacing: 1.5px;
 
-  color: white;
+color: white;
 `;
 const Row = styled.div `
 margin-top: 3%;
@@ -70,13 +106,13 @@ const Button = styled.button `
     block: "start"
   });
 */
-function Header() {
+function ImagenHome() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
-        let windowScrollTop = window.pageYOffset / 3;
+        let windowScrollTop = window.pageYOffset / 2;
         pageHeader.current.style.transform =
           "translate3d(0," + windowScrollTop + "px,0)";
       };
@@ -87,22 +123,31 @@ function Header() {
     }
   });
 
+  
   return (
-    <>
-      <PageHeader>
+    
+    <div Style={{
+      height: '600rem',
+      margin:0,
+      paddin:0
+    }}>
+    
+    <PageHeader>
+    <Filtro></Filtro> 
       
-      <HeaderImage ></HeaderImage>
           <div ref={pageHeader}>
           <Container>
           <div>
-           <Imagen
+          {/* <Imagen
             alt="Logo UNO"
             
             width="150"
             src={require("../assets/img/logouno.png")}
-            />         
-            <H2>Venta y servicio técnico de laboratorios</H2>
-          </div>        
+          />         */}
+            <H2>Uno electromedicina</H2>
+            <H4>Venta y Servicio técnico</H4>
+          </div>  
+             
           <Container>
             <Row>              
                 <Button                  
@@ -113,17 +158,20 @@ function Header() {
               
             </Row>
           </Container>
+            
         </Container>
       
           
           </div>
        
               
-     
-      </PageHeader>     
-        
-    </>
+          <WavesSection /> 
+          
+      </PageHeader>   
+         
+      </div>
+    
   );
 }
 
-export default Header;
+export default ImagenHome;

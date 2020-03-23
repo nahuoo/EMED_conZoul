@@ -11,7 +11,7 @@ position: fixed;
 width: 100vw;
 height: 93px;
 padding: 15px;
-background: black;
+background: rbga(0,0,0,0);
 color: #FFFFFF;
 z-index: 1;
 font-size: 130%;

@@ -8,8 +8,8 @@ import Service from './pages/service'
 import NotFound from './pages/404'
 import Footer from './components/Footer'
 import NavBar from './components/navbar'
-import Header from './components/header'
 import GlobalStyle from './assets/css/GlobalStyle'
+import ImagenHome from './components/ImagenHome'
 
 
 
@@ -19,8 +19,8 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <NavBar /> 
-      <Header />
+      <NavBar />
+      <ImagenHome />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />

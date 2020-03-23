@@ -1,12 +1,14 @@
 import React from 'react'
-import Header from '../components/header'
-import WavesSection from '../components/waves'
+import ImagenHome from '../components/ImagenHome'
+
 
 const Home = () => {
 
   return (
     <div>
-      <WavesSection />
+      <ImagenHome />
+     
+      
     </div>
   )
 }

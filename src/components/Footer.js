@@ -9,23 +9,37 @@ const FooterStyled = styled.footer`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 24px 0;
-  background: linear-gradient(0deg, rgba(21,21,21,1) 67%, rgba(55,53,53,1) 100%);
+  padding: 15vh 0;
+  background: linear-gradient(0deg, rgba(55,55,55,55) 67%, rgba(55,60,53,1) 100%);
   color: #f2f2f2;
+  
   font-family: inherit; 
+  position: relative;
+  
   
   ul {
     margin-bottom: 0;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    
+    height: 20vh;
+    align-items: stretch;
+    justify-content: stretch; }
   ul li{
     padding: 0 0 0.5rem;
+    margin:0 0 0.5rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    align-items: stretch;
+    position: relative;
+    letter-spacing: 1pt;
        }
       ul li a {
         color: inherit;
         padding: 0.5rem;
-        font-size: 0.8571em;
-        transition: 0.3s ease-out;
+        font-size: 1em;
+        
+        justify-content: 10;
         text-decoration: none; }
         ul li a:hover {
           color: red; }
