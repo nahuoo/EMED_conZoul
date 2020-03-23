@@ -13,7 +13,7 @@ height: 93px;
 padding: 15px;
 background: rbga(0,0,0,0);
 color: #FFFFFF;
-z-index: 1;
+z-index: 2;
 font-size: 130%;
 /* ListaLink es el <ul> que con tiene todos los <li> */
 .ListaLink{
@@ -28,16 +28,19 @@ font-size: 130%;
 /* .link son los <a> y <navlinks> dentro de los <Li> */
 .link{
   color: #FFFFFF;
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
   text-decoration: none;
   border-radius: 5px;
   padding: 10px 14px 12px;
+  letter-spacing: 1px;
+  
   
 }
 .link:hover{
-  background-color: #EAF1F1;
-  opacity:20%;
-  color: #000000; 
+  background-color: rgba(234, 241, 241, 0.3);
+  
+  color: #fff; 
+  
 }
 /* Segunda clase que le di a los iconos de FB e Insta ya que tienen distintas dimensiones que las letras, asi que les ajusto el padding */
 .icono{
@@ -79,7 +82,7 @@ const Navbar = () => {
           <NavLink
             to="/contact"
             className="link">
-              Contactenos
+              Contáctenos
           </NavLink>
         </li>
         <li>
