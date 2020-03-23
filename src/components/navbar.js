@@ -35,7 +35,8 @@ font-size: 130%;
   border: 1px solid white;
 }
 .link:hover{
-  background-color: red;  
+  background-color: #EAF1F1;
+  opacity:20%  
 }
 /* Segunda clase que le di a los iconos de FB e Insta ya que tienen distintas dimensiones que las letras, asi que les ajusto el padding */
 .icono{

@@ -70,15 +70,14 @@ const StyledWaves = styled.div `
     100% {
       opacity:1;
   }
-`;
+  }`;
 
 
 
 function WavesSection () {
   return(
     <>
-    <div >hola</div>
-    
+
     <StyledWaves>
       <Wave 
       Style={{margin:0, paddin:0, border:0}}
