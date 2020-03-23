@@ -8,7 +8,7 @@ import Wave from 'react-wavify'
 
  function WavesSection () {
 return(
-<Wave fill='#f79902'
+<Wave fill='#000000'
         paused={false}
         options={{
           height: 20,

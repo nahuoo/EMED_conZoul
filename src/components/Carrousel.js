@@ -5,8 +5,8 @@ import styled from 'styled-components'
 
 
 const DivCarrousel = styled.div`
-  width: 40vw;
-  height: 80vh;
+  width: 80vw;
+  height: 50vh;
   background: black;
   overflow: hidden;
   position: relative;
