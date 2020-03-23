@@ -26,7 +26,7 @@ const StyledWaves = styled.div `
     -moz-animation: fadeIn ease 3s;
     -o-animation: fadeIn ease 3s;
     -ms-animation: fadeIn ease 3s;
-  }
+  
   @keyframes fadeIn {
     0% {
       opacity:0;
@@ -70,7 +70,7 @@ const StyledWaves = styled.div `
     100% {
       opacity:1;
   }
-  }`;
+} ` ;
 
 
 
