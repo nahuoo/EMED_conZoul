@@ -47,7 +47,9 @@ const FooterStyled = styled.footer`
     align-self: flex-end;
     font-size: 0.8571em;
     }
-
+  .Ubicacion {
+    font-size: 1.5em;
+  }
 `
 
 function Footer() {
@@ -67,7 +69,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span className="Ubicacion"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
               <a
                 target="_blank"
                 href="https://www.google.com.ar/maps/place/Chaco+801,+B7600BKQ+Mar+del+Plata,+Buenos+Aires/@-37.9833588,-57.5609986,17z/data=!4m5!3m4!1s0x9584d95a18c9fcd9:0x9d2f9ec1205da2e9!8m2!3d-37.9829465!4d-57.5590997"
@@ -81,21 +83,21 @@ function Footer() {
         <div>
           <ul>
             <li>
-              <i className="fa fa-envelope-o" aria-hidden="true">&nbsp;E-Mail:&nbsp;</i>
+              <i className="fa fa-envelope-o" aria-hidden="true">&nbsp;</i>
               <a href="mailto:unoelectromedicina@gmail.com" target="_blank" rel="noopener noreferrer">
-                unoelectromedicina@gmail.com
+                E-Mail:&nbsp;unoelectromedicina@gmail.com
               </a>
             </li>
             <li>
-              <i class="fa fa-facebook-official" aria-hidden="true">&nbsp;Facebook:&nbsp;</i>
+              <i class="fa fa-facebook-official" aria-hidden="true">&nbsp;</i>
               <a href="https://www.facebook.com/uno.electromedicina/" target="_blank" rel="noopener noreferrer">
-                /uno.electromedicina
+                Facebook:&nbsp;/uno.electromedicina
               </a>
             </li>
             <li>
-              <i class="fa fa-instagram" aria-hidden="true">&nbsp;Instagram:&nbsp;</i>
+              <i class="fa fa-instagram" aria-hidden="true">&nbsp;</i>
               <a href="https://www.instagram.com/unoelectromedicina/">
-                /unoelectromedicina
+                Instagram:&nbsp;/unoelectromedicina
               </a>
             </li>
           </ul>
