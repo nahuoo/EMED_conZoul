@@ -12,7 +12,7 @@ const FooterStyled = styled.footer`
   padding: 15vh 0;
   background: linear-gradient(0deg, rgba(55,55,55,55) 67%, rgba(55,60,53,1) 100%);
   color: #f2f2f2;
-  box-shadow: -2px -2px 2px 1px rgba(126, 114, 144, 0.5);
+  
   font-family: inherit; 
   position: relative;
   

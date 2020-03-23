@@ -45,8 +45,8 @@ table {
 	border-spacing: 0;
 }
 body {
-    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
+    font-family: 'Crete Round', serif;
   }
 `
 export default GlobalStyle

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import fotoTaller from '../assets/img/frente.jpg';
+import fotoTaller from '../assets/img/taller.jpg';
 import WavesSection from './waves.js'
 
 //styles
@@ -15,7 +15,10 @@ const Container = styled.div `
   text-align: left;
   position:static;
   justify-content: justify;
-  height: 37em;
+  margin-top: 20rem;
+  margin-left:1rem;
+
+
 `;    
 
 const PageHeader = styled.div `
@@ -64,15 +67,22 @@ z-index: 1;
 
 
 const H2 = styled.h2`
-font-family: 'Merriweather Sans', sans-serif;
-font-style: italic;
-font-size:38px;
+font-family: 'Crete Round', serif;
+
+font-size:4rem;
 letter-spacing: 1.5px;
 z-index: 1;
 color: white;
+`;
 
 
+const H4 = styled.h4`
+font-family: 'Crete Round', serif;
 
+font-size:1rem;
+letter-spacing: 1.5px;
+
+color: white;
 `;
 const Row = styled.div `
 margin-top: 3%;
@@ -128,13 +138,14 @@ function ImagenHome() {
           <div ref={pageHeader}>
           <Container>
           <div>
-           <Imagen
+          {/* <Imagen
             alt="Logo UNO"
             
             width="150"
-            /*src={require("../assets/img/logouno.png")}*/
-            />         
-            <H2>Venta y servicio técnico de laboratorios</H2>
+            src={require("../assets/img/logouno.png")}
+          />         */}
+            <H2>Uno electromedicina</H2>
+            <H4>Venta y Servicio técnico</H4>
           </div>  
              
           <Container>

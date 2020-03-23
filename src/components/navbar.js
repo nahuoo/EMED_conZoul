@@ -6,7 +6,7 @@ const StyledNav = styled.nav`
 position: fixed;
 width: 100vw;
 height: 13vh;
-background: #16A1B2;
+background: rgba(0,0,0,0);
 color: #000000;
 z-index: 1;
 font-size: 130%;
