@@ -47,6 +47,7 @@ table {
 body {
     @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
     font-family: 'Roboto', sans-serif;
+		box-sizing: border-box;
   }
 `
 export default GlobalStyle
