@@ -2,18 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const LogoTexto = styled.p`
-  color: white;
-  display: flex;
-  justify-content: center;
-  
-  text-decoration: none;
-  border-radius: 5px;
-  
-  letter-spacing: 1px;
-  font-family: 'Neuton', serif;
-
-  `
 const StyledNav = styled.nav`
 /* Contenedor padre, es un <nav> */
 display: flex;
@@ -46,26 +34,29 @@ font-family: 'Neuton', serif;
   border-radius: 5px;
   padding: 10px 14px 12px;
   letter-spacing: 1px;
-  
-  
 }
-.link:hover{
+/* Efecto de fondo blanco en los items links */
+.selected:hover{
   background-color: rgba(234, 241, 241, 0.3);
-  
   color: #fff; 
-  
 }
+
 /* Segunda clase que le di a los iconos de FB e Insta ya que tienen distintas dimensiones que las letras, asi que les ajusto el padding */
 .icono{
   padding: 20px 10px 7px;
-  
-  
 }
+/* Clase del texto del logo para que este bien alineado a todo */
+.title{
+margin-left: 0;
+margin-right: 26em;
+cursor: default;
+}
+
 /* Div contenedor de la <img> con el logo */
 .logo{
   padding: 5px;
-  height: 4rem;;
-  margin-right: auto;  
+  height: 5.1rem;;
+  margin-right: -1em;  
   margin-left: 2em;
 }
 /* Ajusto la imagen para que tome el 100% tamaño del div contenedor */
@@ -82,40 +73,38 @@ const Navbar = () => {
       <NavLink
           to="/"
           exact>
-            <img src={require('../assets/img/logouno.png')} alt='logo'/>
+            <img src={require('../assets/img/logouno.png')} alt='logo'/>     
       </NavLink>
-      <LogoTexto
-            to="/"
-            className="link">
-              Uno electromedicina
-          </LogoTexto>
       </div>
       <ul className="ListaLink">
         <li>
+          <span className="link title">Uno electromedicina</span>
+        </li>
+        <li>
           <NavLink
             to="/about"
-            className="link">
+            className="link selected">
               Sobre Nosotros
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/contact"
-            className="link">
+            className="link selected">
               Contáctenos
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/service"
-            className="link">
+            className="link selected">
               Servicio Técnico
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/productos"
-            className="link">
+            className="link selected">
               Productos
           </NavLink>
         </li>
@@ -124,7 +113,7 @@ const Navbar = () => {
             href="https://www.instagram.com/unoelectromedicina/"
             target="_blank"
             rel="noopener noreferrer"
-            className="link icono">
+            className="link icono selected">
               <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
           </a>
         </li>  
@@ -133,7 +122,7 @@ const Navbar = () => {
             href="https://www.facebook.com/uno.electromedicina/"
             target="_blank"
             rel="noopener noreferrer"
-            className="link icono">
+            className="link icono selected">
               <i class="fa fa-facebook-official fa-2x" aria-hidden="true" ></i>
           </a>
         </li>  
