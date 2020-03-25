@@ -18,43 +18,33 @@ display: flex;
   
 function Texto() {
   return (
-    <Section>
+    
       <Container>
-        <div>
-          <div className="ml-auto mr-auto text-center" md="8">
+        <div>     
             <img
               alt="Uno electromedicina"
               width="150"
               src={require("assets/img/logonavidad.jpg")}
             ></img>
-            <h2 className="title">Quienes somos?</h2>
-            <h3 className="description">
+            <h2>Quienes somos?</h2>
+            <h3>
               Uno Electromedicina se dedica al servicio técnico y venta de
               equipos e insumos de laboratorio.
             </h3>
           </div>
-        </div>
-        <div className="separator separator-primary"></div>
-        <div className="section-story-overview">
-          <Row>
-            <Col md="6">
+        
               <div
-                className="image-container image-left"
                 style={{
                   backgroundImage:
                     "url(" + require("assets/img/papa1.jpg") + ")"
                 }}
               ></div>
-              <div
-                className="image-container"
+              <div              
                 style={{
                   backgroundImage: "url(" + require("assets/img/bg3.jpg") + ")"
                 }}
               ></div>
-            </Col>
-            <Col md="5">
-              <div
-                className="image-container image-right"
+              <div               
                 style={{
                   backgroundImage:
                     "url(" + require("assets/img/taller2.jpg") + ")"
@@ -72,12 +62,9 @@ function Texto() {
               <p>
                 edajneanm aedj jkae daje dajeoaeijdiaj oaejdaiedj
                 aoiejdaedkmlaejnd aokejdmlkaedjka ajednla.
-              </p>
-            </Col>
-          </Row>
-        </div>
+              </p>           
       </Container>
-    </Section>
+    
   );
 }
 

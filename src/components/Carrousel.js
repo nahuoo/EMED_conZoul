@@ -2,19 +2,47 @@ import React, { useState } from 'react'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import propTypes from 'prop-types'
 import styled from 'styled-components'
+import img1 from '../assets/img/slider-numak.jpg';
 
+const FlechaIzquierda = styled.button`
+  background-color: rgba(0,0,0,0); /*transparente*/
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+`
+
+const FlechaDerecha = styled.button`  
+  background-color: rgba(0,0,0,0); /*transparente*/
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+`
 
 const DivCarrousel = styled.div`
-  width: 40vw;
-  height: 80vh;
-  background: black;
+  width: 100%;
+  height: 50vh;
+  background: white;
   overflow: hidden;
   position: relative;
+  margin-top: 4rem;
+  margin-bottom: 10vh;
 /* Botones de atras siguiente */
 .Carrousel_Buttons {
+  display:flex;
   position: absolute;
-  top: 1.5em;
+  align-items: center;
+  justify-content: space-between;
   z-index: 10;
+  height:100%;
+  width:100%;
 }
 /* Tamaño de las fotos */
 .Carrousel_Img {
@@ -78,8 +106,9 @@ const Carrousel = ({images}) => {
   return(
     <DivCarrousel>
       <div className='Carrousel_Buttons'>
-        <button onClick={left}>Atras</button>
-        <button onClick={right}>Siguiente</button>
+        <FlechaIzquierda onClick={left}><i class="fa fa-angle-left" aria-hidden="true"></i></FlechaIzquierda>
+        <FlechaDerecha onClick={right}><i class="fa fa-angle-right" aria-hidden="true"></i></FlechaDerecha>
+              
       </div>
       <TransitionGroup>
         <CSSTransition
@@ -94,7 +123,7 @@ const Carrousel = ({images}) => {
   )
 }
 Carrousel.defaultProps = {
-  images: []
+  images: [img1,img1,img1]
 }
 
 Carrousel.propTypes = {

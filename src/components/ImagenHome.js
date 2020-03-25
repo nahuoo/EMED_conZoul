@@ -1,7 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
 import fotoTaller from '../assets/img/taller.jpg';
-import WavesSection from './waves.js'
+import WavesSection from './waves.js';
+
 
 //styles
   
@@ -12,11 +13,11 @@ import WavesSection from './waves.js'
 const Container = styled.div `
 
   
-  text-align: left;
+  text-align: right;
   position:static;
   justify-content: justify;
   margin-top: 20rem;
-  margin-left:1rem;
+  margin-right: 5rem;
 
 
 `;    
@@ -37,7 +38,7 @@ const PageHeader = styled.div `
   background-position:center; 
   background-attachment: fixed; 
   background-repeat: no-repeat; 
-  background-size: cover ;
+  background-size: cover;
   overflow:hidden;
 `;
 
@@ -58,31 +59,34 @@ position: absolute;
 
 `;
 
-const Imagen = styled.img`
-align-content:space-around;
+const Imagen = styled.div`           
+width: "150";
+background: url({{}});
+align-content:center;
+justify-content: flex-start;
 margin-left: 24px;
 margin-top: 15%;
 z-index: 1;
 `;
 
 
-const H2 = styled.h2`
-font-family: 'Crete Round', serif;
+const H2 = styled.h1`
+font-family: 'Neuton', serif;
 
 font-size:4rem;
-letter-spacing: 1.5px;
+letter-spacing: 0.5px;
 z-index: 1;
 color: white;
 `;
 
 
 const H4 = styled.h4`
-font-family: 'Crete Round', serif;
+font-family: 'Roboto', sans-serif;
 
 font-size:1rem;
 letter-spacing: 1.5px;
 
-color: white;
+color: black;
 `;
 const Row = styled.div `
 margin-top: 3%;
@@ -133,17 +137,13 @@ function ImagenHome() {
     }}>
     
     <PageHeader>
-    <Filtro></Filtro> 
+        <Filtro></Filtro>
       
           <div ref={pageHeader}>
           <Container>
           <div>
-          {/* <Imagen
-            alt="Logo UNO"
-            
-            width="150"
-            src={require("../assets/img/logouno.png")}
-          />         */}
+           <Imagen />        
+                   
             <H2>Uno electromedicina</H2>
             <H4>Venta y Servicio técnico</H4>
           </div>  
