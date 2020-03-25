@@ -2,6 +2,18 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
+const LogoTexto = styled.p`
+  color: white;
+  display: flex;
+  justify-content: center;
+  
+  text-decoration: none;
+  border-radius: 5px;
+  
+  letter-spacing: 1px;
+  font-family: 'Neuton', serif;
+
+  `
 const StyledNav = styled.nav`
 /* Contenedor padre, es un <nav> */
 display: flex;
@@ -14,7 +26,8 @@ padding: 15px;
 background: rbga(0,0,0,0);
 color: #FFFFFF;
 z-index: 2;
-font-size: 130%;
+font-size: 110%;
+font-family: 'Neuton', serif;
 /* ListaLink es el <ul> que con tiene todos los <li> */
 .ListaLink{
   margin-right: 3%;
@@ -22,12 +35,12 @@ font-size: 130%;
 /* Estos son los li dentro de los <ul> */
 .ListaLink li{
   display: inline-block;
-  padding: 0px 7px;
+  padding: 0px 3px;
 
 }
 /* .link son los <a> y <navlinks> dentro de los <Li> */
 .link{
-  color: #FFFFFF;
+  color: white;
   transition: all 0.2s ease 0s;
   text-decoration: none;
   border-radius: 5px;
@@ -46,12 +59,14 @@ font-size: 130%;
 .icono{
   padding: 20px 10px 7px;
   
+  
 }
 /* Div contenedor de la <img> con el logo */
 .logo{
-  padding: 10px;
-  height: 93px;;
+  padding: 5px;
+  height: 4rem;;
   margin-right: auto;  
+  margin-left: 2em;
 }
 /* Ajusto la imagen para que tome el 100% tamaño del div contenedor */
 .logo img {
@@ -69,6 +84,11 @@ const Navbar = () => {
           exact>
             <img src={require('../assets/img/logouno.png')} alt='logo'/>
       </NavLink>
+      <LogoTexto
+            to="/"
+            className="link">
+              Uno electromedicina
+          </LogoTexto>
       </div>
       <ul className="ListaLink">
         <li>
