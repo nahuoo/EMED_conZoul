@@ -50,9 +50,7 @@ transition: all 0.8s ease-out;
     100% {
       opacity:1;
     }
-  }
-  
- 
+  } 
 } 
 
 /* ListaLink es el <ul> que con tiene todos los <li> */
@@ -71,7 +69,7 @@ transition: all 0.8s ease-out;
   transition: all 0.2s ease 0s;
   text-decoration: none;
   border-radius: 5px;
-  padding: 10px 14px 12px;
+  padding: 10px 14px 9px;
   letter-spacing: 1px;
 }
 /* Efecto de fondo blanco en los items links */
@@ -82,20 +80,19 @@ transition: all 0.8s ease-out;
 
 /* Segunda clase que le di a los iconos de FB e Insta ya que tienen distintas dimensiones que las letras, asi que les ajusto el padding */
 .icono{
-  padding: 10px 10px 7px;
+  padding: 18px 10px 7px;
 }
 /* Clase del texto del logo para que este bien alineado a todo */
 .title{
-margin-left: 0;
-margin-right: 10%;
+margin-right: 30rem;
 cursor: default;
+padding: 0;
 }
 
 /* Div contenedor de la <img> con el logo */
 .logo{
   padding: 5px;
-  height: 3rem;;
-  margin-right: 1em;  
+  height: 3rem; 
   margin-left: 0;
 }
 /* Ajusto la imagen para que tome el 100% tamaño del div contenedor */
@@ -134,7 +131,7 @@ const Navbar = () => {
   });
 
     return(
-    <StyledNav background={navbarColor} classname={navbarAnimation} >
+      <StyledNav background={navbarColor} classname={navbarAnimation} >
       <div className="logo">
       <NavLink
           to="/"
