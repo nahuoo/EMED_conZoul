@@ -71,13 +71,14 @@ transition: all 0.8s ease-out;
   transition: all 0.2s ease 0s;
   text-decoration: none;
   border-radius: 5px;
-  padding: 10px 14px 12px;
+  padding: 7px 10px 10px;
   letter-spacing: 1px;
 }
 /* Efecto de fondo blanco en los items links */
 .selected:hover{
   background-color: rgba(234, 241, 241, 0.3);
   color: #fff; 
+  
 }
 
 /* Segunda clase que le di a los iconos de FB e Insta ya que tienen distintas dimensiones que las letras, asi que les ajusto el padding */
