@@ -9,7 +9,7 @@ import NotFound from './pages/404'
 import Footer from './components/Footer'
 import NavBar from './components/navbar'
 import GlobalStyle from './assets/css/GlobalStyle'
-import Carrousel from './components/Carrousel'
+
 
 
 function App() {

@@ -14,6 +14,7 @@ const LogoTexto = styled.p`
   font-family: 'Neuton', serif;
 
   `
+
 const StyledNav = styled.nav`
 /* Contenedor padre, es un <nav> */
 display: flex;
@@ -21,13 +22,52 @@ justify-content: flex-end;
 align-items: center;
 position: fixed;
 width: 100vw;
-height: 93px;
-padding: 15px;
-background: rbga(0,0,0,0);
+height: 50px;
+padding: 8px;
+
+background: ${(props) => props.background|| 'rgba(0,0,0,0)'};
 color: #FFFFFF;
 z-index: 2;
 font-size: 110%;
 font-family: 'Neuton', serif;
+transition: all 0.8s ease-out;
+.Animation{
+  animation: fadeIn ease 6s;
+    -webkit-animation: fadeIn ease 6s;
+    -moz-animation: fadeIn ease 6s;
+    -o-animation: fadeIn ease 6s;
+    -ms-animation: fadeIn ease 6s;
+  
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+ 
+} 
+
 /* ListaLink es el <ul> que con tiene todos los <li> */
 .ListaLink{
   margin-right: 3%;
@@ -75,9 +115,36 @@ font-family: 'Neuton', serif;
   }
 `
 
+
+  
+
 const Navbar = () => {
-  return(
-    <StyledNav>
+  const [navbarColor, setNavbarColor] = React.useState('rbga(0,0,0,0)')
+  const [navbarAnimation, setNavbarAnimation] = React.useState('')
+  React.useEffect(() => {
+    const updateNavbarColor = () => {
+      if (
+        document.documentElement.scrollTop > 400 ||
+        document.body.scrollTop > 400
+      ) {
+        setNavbarColor('rgba(22, 161, 178,0.8)')
+        setNavbarAnimation('Animation')
+      } else if (
+        document.documentElement.scrollTop < 401 ||
+        document.body.scrollTop < 401
+      ) {
+        setNavbarColor('rgba(0,0,0,0)')
+        setNavbarAnimation('')
+      }
+    };
+    window.addEventListener("scroll", updateNavbarColor);
+    return function cleanup() {
+      window.removeEventListener("scroll", updateNavbarColor);
+    };
+  });
+
+    return(
+    <StyledNav background={navbarColor} classname={navbarAnimation} >
       <div className="logo">
       <NavLink
           to="/"

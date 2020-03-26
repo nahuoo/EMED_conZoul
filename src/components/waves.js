@@ -20,59 +20,8 @@ const StyledWaves = styled.div `
   background-repeat: no-repeat; 
   background-size: cover ;
   overflow:hidden;
+  `
   
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
-    -moz-animation: fadeIn ease 3s;
-    -o-animation: fadeIn ease 3s;
-    -ms-animation: fadeIn ease 3s;
-  
-  @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-  }
-} ` ;
-
-
 
 function WavesSection () {
   return(
@@ -93,7 +42,7 @@ function WavesSection () {
         <defs>
           <linearGradient id="gradient" gradientTransform="rotate(90)">
             <stop offset="20%"  stopColor="#16A1B2" />
-            <stop offset="90%" stopColor="#fff" />
+            <stop offset="80%" stopColor="#fff" />
           </linearGradient>
         </defs>
       </Wave>
