@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const StyledNav = styled.nav`
+
 /* Contenedor padre, es un <nav> */
   display: flex;
   justify-content: flex-end;
@@ -34,24 +35,6 @@ const StyledNav = styled.nav`
         opacity:1;
       }
     }
-    
-    @-moz-keyframes fadeIn {
-      0% {
-        opacity:0;
-      }
-      100% {
-        opacity:1;
-      }
-    }
-    
-    @-webkit-keyframes fadeIn {
-      0% {
-        opacity:0;
-      }
-      100% {
-        opacity:1;
-      }
-    } 
   } 
 
   /* ListaLink es el <ul> que con tiene todos los <li> */
@@ -104,6 +87,7 @@ const StyledNav = styled.nav`
     max-width: 100%;
     max-height: 100%;
   }
+
 `
 
 
@@ -114,7 +98,7 @@ const Navbar = () => {
   const [navbarAnimation, setNavbarAnimation] = React.useState('')
   React.useEffect(() => {
     const updateNavbarColor = () => {
-      console.log(window.width)
+      
       if (
         document.documentElement.scrollTop > 400 ||
         document.body.scrollTop > 400

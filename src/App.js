@@ -9,6 +9,7 @@ import NotFound from './pages/404'
 import Footer from './components/Footer'
 import NavBar from './components/navbar'
 import GlobalStyle from './assets/css/GlobalStyle'
+import Carrousel from "./components/Carrousel";
 
 
 
@@ -17,7 +18,7 @@ function App() {
   
   return (
     <div>
-      <GlobalStyle />
+      {/* <GlobalStyle />
       <NavBar />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -27,7 +28,8 @@ function App() {
         <Route path="/productos" component={Productos} />
         <Route component={NotFound} />
       </Switch>
-      <Footer />
+      <Footer /> */}
+      <Carrousel />
     </div>
     
       

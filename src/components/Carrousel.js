@@ -3,27 +3,26 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import propTypes from 'prop-types'
 import styled from 'styled-components'
 import img1 from '../assets/img/slider-numak.jpg';
+import img2 from '../assets/img/deposito.jpg';
+import img3 from '../assets/img/equipamiento.jpg';
+import img4 from '../assets/img/fondo1.jpg';
+import img5 from '../assets/img/fondo3.png';
 
-const FlechaIzquierda = styled.button`
+const Flecha = styled.button`
   background-color: rgba(0,0,0,0); /*transparente*/
   border: none;
   color: black;
   padding: 15px 32px;
-  text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-`
 
-const FlechaDerecha = styled.button`  
-  background-color: rgba(0,0,0,0); /*transparente*/
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: right;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  .Izquierda {
+    text-align: left;
+  }
+  .Derecha {
+    text-align: right;
+  }
 `
 
 const DivCarrousel = styled.div`
@@ -51,26 +50,52 @@ const DivCarrousel = styled.div`
   position: absolute;
 }
 /*Cuando Aparece desde la nada la imagen nueva*/
-.Slide-enter {
+.SlideF-enter {
   position: absolute;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   opacity: 0;
 }
 /* Cuando la imagen nueva se establece como la actual */
-.Slide-enter-active {
+.SlideF-enter-active {
   position: absolute;
   transform: translateX(0%);
   opacity: 1;
   transition: all 1s ease;
 }
 /*Cuando la imagen va a ser reemplazada por la nueva */
-.Slide-exit {
+.SlideF-exit {
   position: absolute;
   transform: translateX(0%);
   opacity: 1;
 }
 /* Cuando esta llegando la otra imagen */
-.Slide-exit-active {
+.SlideF-exit-active {
+  position: absolute;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+/*Cuando Aparece desde la nada la imagen nueva*/
+.SlideB-enter {
+  position: absolute;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+/* Cuando la imagen nueva se establece como la actual */
+.SlideB-enter-active {
+  position: absolute;
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 1s ease;
+}
+/*Cuando la imagen va a ser reemplazada por la nueva */
+.SlideB-exit {
+  position: absolute;
+  transform: translateX(0%);
+  opacity: 1;
+}
+/* Cuando esta llegando la otra imagen */
+.SlideB-exit-active {
   position: absolute;
   transform: translateX(100%);
   opacity: 0;
@@ -83,37 +108,78 @@ const DivCarrousel = styled.div`
 
 const Carrousel = ({images}) => {
   const [ activeIndex, setActiveIndex ] = useState(0)
+  const [ direction, setDirection ] = useState('')
 
   //Generamos la logica de que cuando esta al comienzo, salte al final, y que cuando esta al final, salte al comienzo
-  const left = () => {
-    if(activeIndex > 0){
-       setActiveIndex(activeIndex - 1)
-     }
-     else {
-       setActiveIndex(images.length - 1)
-     }
-  }
-  const right = () => {
-    if(activeIndex < images.length - 1){
-     setActiveIndex(activeIndex + 1)
+  const Arrow = (e) => {
+    
+    if(e.target.className === "fa fa-angle-left"){
+
+      setDirection('SlideB')
+
+      if(activeIndex > 0){
+        setActiveIndex(activeIndex - 1)
+      }
+      else {
+        setActiveIndex(images.length - 1)
+      }
     }
-    else {
-      setActiveIndex(0)
+
+    else{
+
+      setDirection('SlideF')
+
+      if(activeIndex < images.length - 1){
+       setActiveIndex(activeIndex + 1)
+      }
+      else {
+        setActiveIndex(0)
+      }
+    }
+    
+  }
+  
+  const handleLi = (e) =>{
+    setDirection('SlideF')
+
+    switch(e.target.name){
+      case '1':
+        setActiveIndex(0)
+      break;
+      case '2':
+        setActiveIndex(1)
+      break;
+      case '3':
+        setActiveIndex(2)
+      break;
+      case '4':
+        setActiveIndex(3)
+      break;
+      default:
+        setActiveIndex(4)
+      break;
+      
     }
   }
   // Transition clona un objeto que acaba de cambiar, en este caso la imagen al cambiar el indice, y a ese clon le mete animaciones
   // para hacer efectos lindos
   return(
     <DivCarrousel>
+      <ul>
+        <li><button name='1' onClick={handleLi}>1</button></li>
+        <li><button name='2' onClick={handleLi}>2</button></li>
+        <li><button name='3' onClick={handleLi}>3</button></li>
+        <li><button name='4' onClick={handleLi}>4</button></li>
+        <li><button name='5' onClick={handleLi}>5</button></li>
+      </ul>
       <div className='Carrousel_Buttons'>
-        <FlechaIzquierda onClick={left}><i class="fa fa-angle-left" aria-hidden="true"></i></FlechaIzquierda>
-        <FlechaDerecha onClick={right}><i class="fa fa-angle-right" aria-hidden="true"></i></FlechaDerecha>
-              
+        <Flecha className="Izquierda" onClick={Arrow}><i className="fa fa-angle-left" aria-hidden="true"></i></Flecha>
+        <Flecha className="Derecha" onClick={Arrow}><i className="fa fa-angle-right" aria-hidden="true"></i></Flecha>      
       </div>
       <TransitionGroup>
         <CSSTransition
           timeout={1000}   // Aca manejas los segundos que vive un clon, hay que tocarlo en conjunto con las transiciones de css.
-          classNames='Slide'
+          classNames={direction}
           key={activeIndex}
           >
                 <img src={images[activeIndex]} alt='titulo' className='Carrousel_Img'/>
@@ -123,7 +189,7 @@ const Carrousel = ({images}) => {
   )
 }
 Carrousel.defaultProps = {
-  images: [img1,img1,img1]
+  images: [img1,img2,img3, img4, img5]
 }
 
 Carrousel.propTypes = {
