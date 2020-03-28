@@ -55,7 +55,7 @@ const FooterStyled = styled.footer`
 function Footer() {
   return (
     <FooterStyled>
-        <div classname="contacto" >
+        <div className="contacto" >
           <ul>
             <li>
               <Link to="/contact">
@@ -69,7 +69,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-            <span className="Ubicacion"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+            <span className="Ubicacion"><i className="fa fa-map-marker" aria-hidden="true"></i></span>
               <a
                 target="_blank"
                 href="https://www.google.com.ar/maps/place/Chaco+801,+B7600BKQ+Mar+del+Plata,+Buenos+Aires/@-37.9833588,-57.5609986,17z/data=!4m5!3m4!1s0x9584d95a18c9fcd9:0x9d2f9ec1205da2e9!8m2!3d-37.9829465!4d-57.5590997"
@@ -89,13 +89,13 @@ function Footer() {
               </a>
             </li>
             <li>
-              <i class="fa fa-facebook-official" aria-hidden="true">&nbsp;</i>
+              <i className="fa fa-facebook-official" aria-hidden="true">&nbsp;</i>
               <a href="https://www.facebook.com/uno.electromedicina/" target="_blank" rel="noopener noreferrer">
                 Facebook:&nbsp;/uno.electromedicina
               </a>
             </li>
             <li>
-              <i class="fa fa-instagram" aria-hidden="true">&nbsp;</i>
+              <i className="fa fa-instagram" aria-hidden="true">&nbsp;</i>
               <a href="https://www.instagram.com/unoelectromedicina/">
                 Instagram:&nbsp;/unoelectromedicina
               </a>

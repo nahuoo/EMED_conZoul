@@ -29,7 +29,7 @@ function WavesSection () {
 
     <StyledWaves>
       <Wave 
-      Style={{margin:0, paddin:0, border:0}}
+      style={{margin:0, paddin:0, border:0}}
       fill='url(#gradient)'
       paused={false}
       options={{

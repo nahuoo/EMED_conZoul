@@ -18,6 +18,7 @@ const Container = styled.div `
   justify-content: justify;
   margin-top: 20rem;
   margin-right: 5rem;
+  padding-bottom: 10em;
 
 
 `;    
@@ -130,47 +131,24 @@ function ImagenHome() {
   
   return (
     
-    <div Style={{
+    <div style={{
       height: '600rem',
       margin:0,
       paddin:0
-    }}>
+      }}>
     
-    <PageHeader>
-        <Filtro></Filtro>
-      
-          <div ref={pageHeader}>
+      <PageHeader>
+        <Filtro />
+        <div ref={pageHeader}>
           <Container>
-          <div>
-           <Imagen />        
-                   
+            <Imagen />                
             <H2>Uno electromedicina</H2>
-            <H4>Venta y Servicio técnico</H4>
-          </div>  
-             
-          <Container>
-            <Row>              
-                <Button                  
-                  onClick={""}
-                >
-                  Contáctenos
-                </Button>
-              
-            </Row>
+            <H4>Venta y Servicio técnico</H4>  
           </Container>
-            
-        </Container>
-      
-          
-          </div>
-       
-              
-          <WavesSection /> 
-          
-      </PageHeader>   
-         
-      </div>
-    
+        </div>
+        <WavesSection />     
+      </PageHeader>      
+    </div>
   );
 }
 

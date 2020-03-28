@@ -1,6 +1,6 @@
 import React from 'react'
 import ImagenHome from '../components/ImagenHome'
-import Carrousel from '../components/Carrousel'
+import CuerpoHome from '../components/CuerpoHome'
 
 
 const Home = () => {
@@ -8,9 +8,7 @@ const Home = () => {
   return (
     <div>
       <ImagenHome />
-  { //   <Texto />
-  }
-      <Carrousel />  
+      <CuerpoHome />
     </div>
   )
 }
