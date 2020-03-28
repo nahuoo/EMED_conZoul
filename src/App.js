@@ -27,7 +27,7 @@ function App() {
         <Route path="/productos" component={Productos} />
         <Route component={NotFound} />
       </Switch>
-      <Footer />
+      
     </div>
     
       

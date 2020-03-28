@@ -15,7 +15,7 @@ function ImagenHome() {
   React.useEffect(() => {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
-        let windowScrollTop = window.pageYOffset / 2;
+        let windowScrollTop = window.pageYOffset / 3;
         pageHeader.current.style.transform =
           "translate3d(0," + windowScrollTop + "px,0)";
       };
@@ -31,19 +31,20 @@ function ImagenHome() {
     
     
     <PageHeader>
-        <div classname='filtro'></div>
-          <div classname='contenedor' ref={pageHeader}>          
-            <div classname='imagen' />              
+        <div classname='filtro'>
+          <div classname='contenedor' ref={pageHeader}>                                 
             <h1>Uno electromedicina</h1>
-            <h2>Venta y Servicio técnico</h2>             
+            <h2>Venta y Servicio técnico</h2>            
               <button classname='button'                  
               onClick={""}
               >
                 Contáctenos
               </button>          
-           </div>             
-           <WavesSection />
-      </PageHeader>       
+             </div>
+          </div>        
+          <WavesSection />
+      </PageHeader>   
+      
   );
 }
 

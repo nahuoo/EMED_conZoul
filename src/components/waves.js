@@ -10,7 +10,11 @@ const StyledWaves = styled.div `
   height: 22vh; 
   background-repeat: no-repeat; 
   background-size: cover ;
-  top:100vh;
+  top:87%;
+
+  @media (min-height:900px){
+    top:88%;
+  }
   `
   
 
@@ -20,7 +24,7 @@ function WavesSection () {
 
     <StyledWaves>
       <Wave 
-      Style={{margin:0, paddin:0, border:0}}
+      style={{margin:0, paddin:0, border:0}}
       fill='url(#gradient)'
       paused={false}
       options={{
