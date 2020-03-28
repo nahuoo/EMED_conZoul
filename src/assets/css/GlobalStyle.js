@@ -25,9 +25,13 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -49,6 +53,12 @@ body {
     font-family: 'Archivo', sans-serif;
 	font-family: 'Roboto', sans-serif;
   }
+
+@media screen and (max-width: 400px) {
+		height:100vh;
+		weight:100vw;
+	
+}
 `
 export default GlobalStyle
 
