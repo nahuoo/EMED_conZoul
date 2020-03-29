@@ -18,7 +18,7 @@ function App() {
   
   return (
     <div>
-      {/* <GlobalStyle />
+       <GlobalStyle />
       <NavBar />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -28,8 +28,7 @@ function App() {
         <Route path="/productos" component={Productos} />
         <Route component={NotFound} />
       </Switch>
-      <Footer /> */}
-      <Carrousel />
+      
     </div>
     
       

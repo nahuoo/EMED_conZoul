@@ -3,23 +3,18 @@ import Wave from 'react-wavify'
 import styled from 'styled-components'
 
 const StyledWaves = styled.div `
-   
-  
-	margin: 30px, 0px, 0px; 
-  padding: 0px;
-  border-style: none solid none solid;
+  position: absolute;
   border-color: #000;
-  color: rgba(255, 255, 255, 0.5); 
-  position: relative;
-  background: linear-gradient(rgba(0,0,0,0),white);
+  background: rgba(0, 0, 0, 0.0);
   width: 100%;
- 
   height: 22vh; 
-   
-  
   background-repeat: no-repeat; 
   background-size: cover ;
-  overflow:hidden;
+  top:87%;
+
+  @media (min-height:900px){
+    top:88%;
+  }
   `
   
 

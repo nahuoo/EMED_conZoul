@@ -140,6 +140,7 @@ const Carrousel = ({images}) => {
   }
   
   const handleLi = (e) =>{
+    // Aca podes poner la animacion que quieras al cambiar la foto con los botones numericos
     setDirection('SlideF')
 
     switch(e.target.name){
