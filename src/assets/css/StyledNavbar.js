@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import device from './Responsive'
 
 const StyledNav = styled.nav`
 /* Contenedor padre, es un <nav> */

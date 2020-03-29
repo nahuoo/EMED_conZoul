@@ -1,10 +1,12 @@
 import React from 'react'
+import Mapa from '../components/Mapa'
+
 
 const Contact = () => {
 
   return (
-    <div>
-      <h1>Hola desde Contactos</h1>
+    <div >
+      <Mapa />
     </div>
   )
 }
