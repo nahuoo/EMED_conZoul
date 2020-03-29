@@ -1,34 +1,34 @@
 import React from 'react'
+import StyledFormulario from '../assets/css/StyledFormulario'
+
 
 /* El formulario */
 const Formulario = () => {
-  
-const handleSubmit = (e) => e.preventDefault()
 
-  const nombre = React.useRef
+ /* const nombre = React.useRef
   const email = React.useRef
   const mensaje = React.useRef
-
-  return(
-    <form onSubmit = {handleSubmit}>
+*/  return(
+    <StyledFormulario>
+    <form >
       <h2>Quieres escribirnos?</h2>
     {/* input del nombre */}    
       <input 
-        ref={nombre}
-        placeholder='Nombre...'
+       /* ref={nombre} */
+         placeholder='Nombre...'
         type='text'
 
       />
       {/* input del mail */}
       <input 
-        ref={email}
+       /* ref={email} */
         placeholder='Email...'
         type='text'
         
       />
       {/* input del mensaje */}
       <input 
-        ref={mensaje}
+      /*  ref={mensaje} */
         placeholder='Escribe un mensaje...'
         cols='80'
         rows='4'
@@ -38,12 +38,12 @@ const handleSubmit = (e) => e.preventDefault()
 
       {/* el boton Submit*/}
     <button 
-      type='submit'
-      block
       onClick={''}
 
-    />
+    > Enviar
+    </button>
     </form>
+    </StyledFormulario>
   )
 }
 

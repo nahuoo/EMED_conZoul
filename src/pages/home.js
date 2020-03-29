@@ -31,6 +31,7 @@ const Home = () => {
   return (
     <div>
       <ImagenHome />
+      <Formulario />
    
     </div>
   )
