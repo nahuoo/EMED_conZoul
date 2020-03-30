@@ -31,12 +31,12 @@ function ImagenHome() {
     
     
     <PageHeader>
-        <div classname='filtro'>
-          <div classname='contenedor' ref={pageHeader}>                                 
+        <div className='filtro'>
+          <div className='contenedor' ref={pageHeader}>                                 
             <h1>Uno electromedicina</h1>
             <h2>Venta y Servicio técnico</h2>            
-              <button classname='button'                  
-              onClick={""}
+              <button className='button'                  
+              
               >
                 Contáctenos
               </button>          

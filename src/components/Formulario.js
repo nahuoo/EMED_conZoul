@@ -1,16 +1,27 @@
 import React from 'react'
 import StyledFormulario from '../assets/css/StyledFormulario'
 
-
 /* El formulario */
 const Formulario = () => {
 
- /* const nombre = React.useRef
-  const email = React.useRef
-  const mensaje = React.useRef
-*/  return(
+ // Falta Logica de comprobacion de campos
+ const handleSubmit = (event) => { 
+  event.preventDefault()
+
+  let Mensaje = `name=${event.target[0].value}&email=${event.target[1].value}&message=${event.target[2].value}` 
+
+  fetch('http://192.168.0.2:4000/email', {
+   method: 'post',
+   headers: {'Content-Type':'application/x-www-form-urlencoded'},
+   body: Mensaje
+  })
+  .then(response => response.text())
+  .then(data => console.log(data));
+  }
+
+  return(
     <StyledFormulario>
-    <form >
+    <form onSubmit={handleSubmit}>
       <h2>Quieres escribirnos?</h2>
     {/* input del nombre */}    
       <input 
@@ -37,11 +48,7 @@ const Formulario = () => {
       />
 
       {/* el boton Submit*/}
-    <button 
-      onClick={''}
-
-    > Enviar
-    </button>
+    <input type='submit' value='Enviar'/>
     </form>
     </StyledFormulario>
   )
