@@ -36,8 +36,7 @@ function ImagenHome() {
   
   return (
     
-    <PageHeader>
-        
+    <PageHeader> 
         <div className='contenedor' ref={pageHeader}>                                 
           <h1 >Uno Electromedicina</h1>
           <h2>Venta y Servicio técnico</h2>            
