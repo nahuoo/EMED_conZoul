@@ -22,7 +22,7 @@ const Formulario = () => {
   return(
     <StyledFormulario>
     <form onSubmit={handleSubmit}>
-      <h2>Quieres escribirnos?</h2>
+      <h2 id='form'>Quieres escribirnos?</h2>
     {/* input del nombre */}    
       <input 
        /* ref={nombre} */
@@ -38,17 +38,18 @@ const Formulario = () => {
         
       />
       {/* input del mensaje */}
-      <input 
+      <textarea 
       /*  ref={mensaje} */
         placeholder='Escribe un mensaje...'
         cols='80'
         rows='4'
         type='textarea'
+        className='texto'
         
       />
 
       {/* el boton Submit*/}
-    <input type='submit' value='Enviar'/>
+    <input className='submit' type='submit' value='            Enviar'/>
     </form>
     </StyledFormulario>
   )

@@ -10,7 +10,7 @@ const StyledFormulario = styled.div `
     font-family: 'Roboto', sans-serif;
     
 
- input{ 
+ input,textarea{ 
     position:relative;
     background-color: transparent;
     border: 1px solid #E3E3E3;
@@ -26,8 +26,7 @@ const StyledFormulario = styled.div `
     justify-content:center;
     left:22vw;
     font-family: 'Roboto', sans-serif;
-    
-    
+    padding-left: 20px;
 
 
   -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -39,11 +38,22 @@ const StyledFormulario = styled.div `
   box-shadow: none; 
  }
 
+ .texto{
+    height: 100px;
+    padding-top:10px;
+ }
+
+ .submit{
+      width: 20vw;
+      color:white;
+      left:40%;
+      background:rgba(199, 0, 5, 0.8);
+      padding-left:20px;
+    }
+
  input:focus, textarea:focus{
     border-radius: 0.25rem 0.25rem 0 0;  
-    color: #2c2c2c;
-    
-    
+    color: #2c2c2c; 
  }
 
  h2{
@@ -56,7 +66,35 @@ const StyledFormulario = styled.div `
     
  }
  
- 
+ @media screen and (max-width: 500px){
+
+   input{ 
+    ::placeholder{
+       margin-left:10px;
+    }
+    padding-left: 10px;
+    width: 50vw;
+    font-size: 0.8571em;
+    display: flex;
+    margin: 3vh;
+    left:0px;
+ }
+
+ .submit{
+   text-align: center;
+   width: 30vw;
+   color:white;
+   left:30px;
+   background:rgba(199, 0, 5, 0.8);
+   padding-left:15px;
+
+ }
+
+ textarea{
+    left:0px;
+    width:47vw;
+ }
+}
   `
 
   export default StyledFormulario

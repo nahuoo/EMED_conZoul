@@ -66,6 +66,7 @@ const StyledNav = styled.nav`
     padding: 0px 3px;
   }
 
+
   /* el logo del navbar responsive */
 .burger{
   
@@ -95,6 +96,8 @@ const StyledNav = styled.nav`
   } */
 
  /* el navbar de mobile */
+
+
   @media (max-width: 980px) {
     .ListaLink{
       margin-top:auto;
@@ -102,9 +105,9 @@ const StyledNav = styled.nav`
       display: flex;
       position: fixed;
       flex-direction: column;
-      width:50%;
+      width:250px;
       border-radius:0;
-      background: black;
+      background: rgba(22, 161, 178,0.8);
       transition: all 0.5s ease-in;
       height:100vh;
       top:8vh;
@@ -121,15 +124,15 @@ const StyledNav = styled.nav`
 
     .ListaLink li{
       width: 100%;
-      background: black;
+      background: rgba(22, 161, 178,0.8);
       text-align: center;
-      border-top: 0.5px solid red;
-      border-bottom: 0.5px solid red;
+      border-top: 0.2px solid white;
+      border-bottom: 0.2px solid white;
       padding: 30px 0;
     }
       .burger{
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 20px;
         
       }
 

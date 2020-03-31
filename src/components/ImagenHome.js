@@ -2,6 +2,8 @@ import React from "react";
 import WavesSection from '../components/waves.js'
 import PageHeader from '../assets/css/StyleImagenHome';
 
+
+
 // core components
 /* const handleClick = () =>
   document.getElementById("name").scrollIntoView({
@@ -26,25 +28,29 @@ function ImagenHome() {
     }
   });
 
+  const handleClick = () =>
+        document.getElementById("form").scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
   
   return (
     
-    
     <PageHeader>
-        <div className='filtro'>
-          <div className='contenedor' ref={pageHeader}>                                 
-            <h1>Uno electromedicina</h1>
-            <h2>Venta y Servicio técnico</h2>            
-              <button className='button'                  
-              
-              >
-                Contáctenos
-              </button>          
-             </div>
-          </div>        
-          <WavesSection />
-      </PageHeader>   
-      
+        
+        <div className='contenedor' ref={pageHeader}>                                 
+          <h1 >Uno Electromedicina</h1>
+          <h2>Venta y Servicio técnico</h2>            
+            <button type='button' onClick={handleClick}>                    
+            Contáctenos
+            </button >          
+        </div>
+      <span> 
+          <img src={require('../assets/img/logouno.png')} alt='logo'/> 
+        </span>
+      <WavesSection />
+    </PageHeader>   
+    
   );
 }
 

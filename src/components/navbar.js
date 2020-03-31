@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import StyledNav from '../assets/css/StyledNavbar'
 
+
 const Navbar = () => {
   const [ navbarColor, setNavbarColor ] = React.useState('rbga(0,0,0,0)')
   const [ navbarAnimation, setNavbarAnimation ] = React.useState('')
@@ -15,6 +16,7 @@ const Navbar = () => {
       ) {
         setNavbarColor('rgba(22, 161, 178,0.8)')
         setNavbarAnimation('Animation')
+
       } else if (
         document.documentElement.scrollTop < 401 ||
         document.body.scrollTop < 401
@@ -29,6 +31,7 @@ const Navbar = () => {
     };
   });
 
+   
   function handleClick(){
 
     setToggle(!toggle)
