@@ -8,6 +8,13 @@ const Contact = () => {
   return (
     <Contacto>
       <Formulario />
+      <div className='informacion'>
+        <h3>Teléfono</h3>
+        <h3>Dirección</h3>
+        <h3>WhatsApp
+        <h3>hola</h3>
+        </h3>
+      </div>
       <Mapa />
 
     </Contacto>

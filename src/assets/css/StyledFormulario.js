@@ -8,11 +8,12 @@ const StyledFormulario = styled.div `
     align-content: center;
     justify-content:center;
     font-family: 'Roboto', sans-serif;
+    background: rgba(255, 255, 255, 0.5);
     
 
  input,textarea{ 
     position:relative;
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #E3E3E3;
     border-radius: 30px;
     color: #2c2c2c;
