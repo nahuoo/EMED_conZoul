@@ -12,16 +12,13 @@ const FooterStyled = styled.footer`
   padding: 15vh 0;
   background: linear-gradient(0deg, rgba(55,55,55,55) 67%, rgba(55,60,53,1) 100%);
   color: #f2f2f2;
-  
   font-family: inherit; 
   position: relative;
-  
   
   ul {
     margin-bottom: 0;
     padding: 0;
     list-style: none;
-    
     height: 20vh;
     align-items: stretch;
     justify-content: stretch; }
@@ -42,7 +39,7 @@ const FooterStyled = styled.footer`
         justify-content: 10;
         text-decoration: none; }
         ul li a:hover {
-          color: red; }
+          color: #16A1B2; }
   .copyright {
     align-self: flex-end;
     font-size: 0.8571em;
@@ -50,32 +47,52 @@ const FooterStyled = styled.footer`
   .Ubicacion {
     font-size: 1.5em;
   }
+
+  @media (max-width: 980px){
+    padding: 5vh;
+    justify-content: space-evenly;
+
+    ul {
+      height: 15vh;
+    }
+    ul li{
+      font-weight: bold;
+      font-size: 11px;
+    }
+    .copyright {
+      font-size: 10px;
+      position: absolute;
+      left: 33%;
+    }
+    .icon {
+      display: none;
+    }
+  }
 `
 
 function Footer() {
   return (
     <FooterStyled>
-        <div className="contacto" >
+        <div>
           <ul>
             <li>
               <Link to="/contact">
-                CONTACTO
+                Contacto
               </Link>
             </li>
             <li>
             
               <Link to="/about">
-                SOBRE NOSOTROS
+                Sobre Nosotros
               </Link>
             </li>
             <li>
-            <span className="Ubicacion"><i className="fa fa-map-marker" aria-hidden="true"></i></span>
               <a
                 target="_blank"
                 href="https://www.google.com.ar/maps/place/Chaco+801,+B7600BKQ+Mar+del+Plata,+Buenos+Aires/@-37.9833588,-57.5609986,17z/data=!4m5!3m4!1s0x9584d95a18c9fcd9:0x9d2f9ec1205da2e9!8m2!3d-37.9829465!4d-57.5590997"
                 rel="noopener noreferrer"
                 >
-                  CHACO 801, MAR DEL PLATA (B7600BKQ)
+                  Chaco 801, Mar del Plata<br/>&nbsp;&nbsp;(B7600BKQ)
               </a>
             </li>
           </ul>
@@ -83,19 +100,19 @@ function Footer() {
         <div>
           <ul>
             <li>
-              <i className="fa fa-envelope-o" aria-hidden="true">&nbsp;</i>
+              <i className="fa fa-envelope-o icon" aria-hidden="true">&nbsp;</i>
               <a href="mailto:unoelectromedicina@gmail.com" target="_blank" rel="noopener noreferrer">
                 E-Mail:&nbsp;unoelectromedicina@gmail.com
               </a>
             </li>
             <li>
-              <i className="fa fa-facebook-official" aria-hidden="true">&nbsp;</i>
+              <i className="fa fa-facebook-official icon" aria-hidden="true">&nbsp;</i>
               <a href="https://www.facebook.com/uno.electromedicina/" target="_blank" rel="noopener noreferrer">
                 Facebook:&nbsp;/uno.electromedicina
               </a>
             </li>
             <li>
-              <i className="fa fa-instagram" aria-hidden="true">&nbsp;</i>
+              <i className="fa fa-instagram icon" aria-hidden="true">&nbsp;</i>
               <a href="https://www.instagram.com/unoelectromedicina/">
                 Instagram:&nbsp;/unoelectromedicina
               </a>
