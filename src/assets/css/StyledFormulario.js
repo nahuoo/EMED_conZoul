@@ -4,7 +4,8 @@ const StyledFormulario = styled.div `
 
     display: flex;
     flex-direction: column;
-    margin: 10vh;
+    
+    padding:10vh;
     align-content: center;
     justify-content:center;
     font-family: 'Roboto', sans-serif;

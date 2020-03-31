@@ -2,77 +2,60 @@ import React from "react";
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import '../assets/font-awesome-4.7.0/css/font-awesome.min.css'
+import device from '../assets/css/Responsive'
 
-const FooterStyled = styled.footer`
+const StyledFooter = styled.footer`
   
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 15vh 0;
-  background: linear-gradient(0deg, rgba(55,55,55,55) 67%, rgba(55,60,53,1) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 67%, rgba(22, 161, 178, 1) 100%);
+  padding: 7.5vh 0;
   color: #f2f2f2;
-  font-family: inherit; 
-  position: relative;
-  
+
   ul {
-    margin-bottom: 0;
-    padding: 0;
-    list-style: none;
-    height: 20vh;
-    align-items: stretch;
-    justify-content: stretch; }
+    height: 18vh;
+  }
   ul li{
     padding: 0 0 0.5rem;
     margin:0 0 0.5rem;
-    font-family: 'Merriweather Sans', sans-serif;
     font-weight: bold;
-    align-items: stretch;
-    position: relative;
-    letter-spacing: 1pt;
-       }
-      ul li a {
-        color: inherit;
-        padding: 0.5rem;
-        font-size: 1em;
-        
-        justify-content: 10;
-        text-decoration: none; }
-        ul li a:hover {
-          color: #16A1B2; }
+    font-size: 9.5px;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 0.5pt;
+  }
+  ul li a {
+    color: inherit;
+    text-decoration: none;
+      
+  }
+  ul li a:hover {
+    color: #16A1B2;
+  }
   .copyright {
+    font-size: 8px;
+    position: absolute;
     align-self: flex-end;
-    font-size: 0.8571em;
-    }
-  .Ubicacion {
-    font-size: 1.5em;
+    left: 33%;
+  }
+  .icon {
+    display: none;
+  }
+  .direction {
+    line-height: 20px; 
   }
 
-  @media (max-width: 980px){
-    padding: 5vh;
-    justify-content: space-evenly;
+  @media (min-width: 768px) {
 
-    ul {
-      height: 15vh;
-    }
-    ul li{
-      font-weight: bold;
-      font-size: 11px;
-    }
-    .copyright {
-      font-size: 10px;
-      position: absolute;
-      left: 33%;
-    }
-    .icon {
-      display: none;
-    }
+
   }
+ 
 `
 
 function Footer() {
   return (
-    <FooterStyled>
+    <StyledFooter>
         <div>
           <ul>
             <li>
@@ -83,7 +66,7 @@ function Footer() {
             <li>
             
               <Link to="/about">
-                Sobre Nosotros
+                Sobre Nosotros 
               </Link>
             </li>
             <li>
@@ -92,7 +75,7 @@ function Footer() {
                 href="https://www.google.com.ar/maps/place/Chaco+801,+B7600BKQ+Mar+del+Plata,+Buenos+Aires/@-37.9833588,-57.5609986,17z/data=!4m5!3m4!1s0x9584d95a18c9fcd9:0x9d2f9ec1205da2e9!8m2!3d-37.9829465!4d-57.5590997"
                 rel="noopener noreferrer"
                 >
-                  Chaco 801, Mar del Plata<br/>&nbsp;&nbsp;(B7600BKQ)
+                  <p>Chaco 801, Mar del Plata</p><p className="direction">(B7600BKQ)</p>
               </a>
             </li>
           </ul>
@@ -123,7 +106,7 @@ function Footer() {
           {new Date().getFullYear()}, Uno Electromedicina © Todos los derechos reservados.
         </div>
         
-      </FooterStyled>
+      </StyledFooter>
   );
 }
 

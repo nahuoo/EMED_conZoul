@@ -15,8 +15,10 @@ const Contact = () => {
         <h3>hola</h3>
         </h3>
       </div>
-      <Mapa />
-
+    
+      <div className='contenedorMapa'>
+        <Mapa />
+      </div>
     </Contacto>
   )
 }

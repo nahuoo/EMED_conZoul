@@ -6,8 +6,7 @@ import Data from '../assets/mapgeojson.js'
 
 // Estilo del div principal del mapa, aca ajusta tamaño
 const styles = {
-
-  wrapper: { 
+   wrapper: { 
     height: 400, 
     width: '80%', 
     margin: '0 auto', 

@@ -3,14 +3,13 @@ import fondo from '../img/mardel2.jpg'
 
 
 const Contacto = styled.div `
-    display:grid;
-    grid-template-columns:  2fr;
-    grid-template-rows: 2fr;
+    display:flex;
+    flex-direction:column;
     grid-gap: 5px;
     background-image: url("${fondo}");
-    width: 100vw;
+    width: 1000vw;
     max-width: 100%;
-    height: 120vh;  
+    height: 200vh;  
     background-position: center;
     background-attachment: fixed; 
     background-repeat: no-repeat; 
@@ -24,6 +23,12 @@ const Contacto = styled.div `
         background: grey;
         height: 50%;
         width: 50%;
+        
+    }
+
+    .contenedorMapa{
+        margin:10vh;
+
     }
 `
 
