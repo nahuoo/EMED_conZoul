@@ -7,14 +7,10 @@ const Contacto = styled.div `
     flex-direction:column;
     grid-gap: 5px;
     background-image: url("${fondo}");
-    width: 1000vw;
-    max-width: 100%;
-    height: 200vh;  
     background-position: center;
     background-attachment: fixed; 
     background-repeat: no-repeat; 
     background-size: cover;
-    padding:15px;
     top: 8vh;
     overflow:hidden;
 

@@ -4,7 +4,6 @@ const StyledFormulario = styled.div `
 
     display: flex;
     flex-direction: column;
-    
     padding:10vh;
     align-content: center;
     justify-content:center;
