@@ -2,7 +2,6 @@ import React from "react";
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import '../assets/font-awesome-4.7.0/css/font-awesome.min.css'
-import device from '../assets/css/Responsive'
 
 const StyledFooter = styled.footer`
   position: relative;
