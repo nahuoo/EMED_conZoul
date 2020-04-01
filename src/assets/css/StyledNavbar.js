@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import device from './Responsive'
 
 const StyledNav = styled.nav`
 /* Contenedor padre, es un <nav> */
@@ -13,7 +12,7 @@ const StyledNav = styled.nav`
   padding: 4px;
   background: ${(props) => props.background|| 'rgba(0,0,0,0)'};
   color: #FFFFFF;
-  z-index: 2;
+  z-index: 22;
   font-size: 110%;
   font-family: 'Neuton', serif;
   transition: all 0.8s ease-out;

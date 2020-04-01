@@ -1,6 +1,6 @@
 import React from 'react'
 import ImagenHome from '../components/ImagenHome'
-import CuerpoHome from '../components/CuerpoHome'
+
 
 import Formulario from '../components/Formulario'
 

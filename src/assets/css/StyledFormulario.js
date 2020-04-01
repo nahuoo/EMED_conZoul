@@ -3,14 +3,14 @@ import styled from 'styled-components'
 const StyledFormulario = styled.div `
 
     display: flex;
-    flex-direction: column;
-    
-    padding:10vh;
-    align-content: center;
-    justify-content:center;
+    flex-direction: row;
+    margin:5%;
+    padding:5%;
+    align-items: center;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     background: rgba(255, 255, 255, 0.5);
-    
+    padding-left: 10%;
 
  input,textarea{ 
     position:relative;
@@ -19,16 +19,16 @@ const StyledFormulario = styled.div `
     border-radius: 30px;
     color: #2c2c2c;
     height: 2em;
-    width: 40vw;
+    width: 55%;
+    min-width:200px;
     font-size: 0.8571em;
     display: flex;
     flex-direction: column;
-    margin: 3vh;
-    align-content: center;
+    margin: 2%;
+    align-items: center;
     justify-content:center;
-    left:22vw;
     font-family: 'Roboto', sans-serif;
-    padding-left: 20px;
+    padding-left:20px;
 
 
   -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -43,14 +43,14 @@ const StyledFormulario = styled.div `
  .texto{
     height: 100px;
     padding-top:10px;
+    text-align: left;
  }
 
  .submit{
-      width: 20vw;
+      width: 3vw;
       color:white;
-      left:40%;
       background:rgba(199, 0, 5, 0.8);
-      padding-left:20px;
+      padding-left:10%;
     }
 
  input:focus, textarea:focus{
@@ -63,18 +63,19 @@ const StyledFormulario = styled.div `
     font-size:2rem;
     letter-spacing: 0.5px;
     color: black;
-    text-align: center;
-    margin-left: 1vw;
+    text-align: center;   
+   padding-right: 10%;
+   margin-bottom:30px;
     
  }
  
  @media screen and (max-width: 500px){
 
-   input{ 
+   input,textarea{ 
     ::placeholder{
        margin-left:10px;
     }
-    padding-left: 10px;
+    padding-left: 1px;
     width: 50vw;
     font-size: 0.8571em;
     display: flex;
@@ -84,16 +85,16 @@ const StyledFormulario = styled.div `
 
  .submit{
    text-align: center;
-   width: 30vw;
+   width: 20vw;
    color:white;
-   left:30px;
+   left:0px;
    background:rgba(199, 0, 5, 0.8);
    padding-left:15px;
 
  }
 
  textarea{
-    left:0px;
+    left:5px;
     width:47vw;
  }
 }

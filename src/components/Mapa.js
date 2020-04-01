@@ -10,10 +10,13 @@ const styles = {
     height: 400, 
     width: '80%', 
     margin: '0 auto', 
-    display: 'flex' 
+    display: 'flex',
+    position: 'relative'
+     
   },
   map: {
     flex: 1
+    
   } 
 };
 // Estilos del marcador, dibujalo como quieras mientras no la cagues
@@ -50,3 +53,4 @@ Mapa.defaultProps = {
 };
 
 export default Mapa;
+

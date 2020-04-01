@@ -46,8 +46,8 @@ const PageHeader = styled.div `
 
     span{
         position: absolute;
-        top:30vh;
-        left:65vw;
+        top:41vh;
+        margin-left:40%;
     }
     button{
         position:relative;
@@ -116,7 +116,7 @@ const PageHeader = styled.div `
        
         span{
         top:150px;
-        left:20px;
+        left:0x;
             
     }
         img{
@@ -140,7 +140,7 @@ const PageHeader = styled.div `
       span{
         position: absolute;
         top:14vh;
-        left:28vw;
+        left:0vw;
     }
 
     h1{
