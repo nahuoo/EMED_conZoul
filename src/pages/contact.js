@@ -25,7 +25,7 @@ const Contact = () => {
                 </a>
                 
             </li>
-          <li>Celular: +54 9 (0223) 156 800944 </li>
+          <li><i class="fab fa-whatsapp"></i> Celular: +54 9 (0223) 156 800944 </li>
           <li><i className="fa fa-envelope-o icon" aria-hidden="true">&nbsp;</i>
                 <a href="mailto:unoelectromedicina@gmail.com" target="_blank" rel="noopener noreferrer">
                    E-Mail:&nbsp;unoelectromedicina@gmail.com  </a> </li>     
