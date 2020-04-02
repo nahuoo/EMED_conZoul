@@ -3,14 +3,14 @@ import styled from 'styled-components'
 const StyledFormulario = styled.div `
 
     display: flex;
-    flex-direction: row;
-    margin:5%;
-    padding:5%;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    padding:10vh;
+    margin-top:10px;
+    align-content: center;
+    justify-content:center;
     font-family: 'Roboto', sans-serif;
     background: rgba(255, 255, 255, 0.5);
-    padding-left: 10%;
+    padding-left: 30%;
 
  input,textarea{ 
     position:relative;
@@ -50,7 +50,10 @@ const StyledFormulario = styled.div `
       width: 3vw;
       color:white;
       background:rgba(199, 0, 5, 0.8);
-      padding-left:10%;
+      text-align:center;
+      padding-left:0;
+      width: 20%;
+      min-width:60px;
     }
 
  input:focus, textarea:focus{
@@ -63,17 +66,34 @@ const StyledFormulario = styled.div `
     font-size:2rem;
     letter-spacing: 0.5px;
     color: black;
-    text-align: center;   
-   padding-right: 10%;
+    text-align: flex-start;   
+   padding-right: 0%;
+   padding-top: 10px;
+   padding-bottom: 10px;
    margin-bottom:30px;
+   padding-left: 10%;
+
     
  }
+
+ @media screen and (max-width: 800px){
+
+   
+
+   h2{
+      padding-left: 10%;
+}
+}
  
  @media screen and (max-width: 500px){
 
+   padding-left: 15%;
+   justify-content: center;
+
+
    input,textarea{ 
     ::placeholder{
-       margin-left:10px;
+       margin-left:15px;
     }
     padding-left: 1px;
     width: 50vw;
@@ -81,23 +101,59 @@ const StyledFormulario = styled.div `
     display: flex;
     margin: 3vh;
     left:0px;
+    
  }
 
  .submit{
    text-align: center;
-   width: 20vw;
    color:white;
    left:0px;
    background:rgba(199, 0, 5, 0.8);
-   padding-left:15px;
+   padding-left:0px;
+   width: 25%;
 
  }
 
  textarea{
-    left:5px;
+    left:0px;
     width:47vw;
  }
 }
   `
 
   export default StyledFormulario
+
+
+
+  /* 
+
+  display: flex;
+    flex-direction: column;
+    padding:10vh;
+    margin-top:0px;
+    align-content: center;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(255, 255, 255, 0.5);
+    padding-left: 15%;
+
+ input,textarea{ 
+    position:relative;
+    background-color: white;
+    border: 1px solid #E3E3E3;
+    border-radius: 30px;
+    color: #2c2c2c;
+    height: 2em;
+    width: 55%;
+    min-width:200px;
+    font-size: 0.8571em;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    align-items: center;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+    padding-left:20px;
+
+
+    */

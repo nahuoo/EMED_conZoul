@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import StyledNav from '../assets/css/StyledNavbar'
 
 
+
 const Navbar = () => {
   const [ navbarColor, setNavbarColor ] = React.useState('rbga(0,0,0,0)')
   const [ navbarAnimation, setNavbarAnimation ] = React.useState('')
@@ -38,41 +39,45 @@ const Navbar = () => {
   } 
   
   return(
-      <StyledNav background={navbarColor} classname={navbarAnimation}>
+      <StyledNav background={navbarColor} className={navbarAnimation}>
       <div className="logo">
         <NavLink
           to="/"
           exact>
             <img src={require('../assets/img/logouno.png')} alt='logo'/>
         </NavLink>
-        <span className="link title">Uno electromedicina</span>     
+        <span className="title">Uno Electromedicina</span>     
       </div>
        <ul className={`ListaLink ${toggle ? 'active' : 'hidden' }`}>
         <li>
           <NavLink
             to="/about"
-            className="link selected">
+            className="link"
+            activeClassName='navActive'>
               Sobre Nosotros
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/contact"
-            className="link selected">
+            className="link"
+            activeClassName='navActive'>
               Contáctenos
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/service"
-            className="link selected">
+            className="link"
+            activeClassName='navActive'>
               Servicio Técnico
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/productos"
-            className="link selected">
+            className="link"
+            aactiveClassName='navActive'>
               Productos
           </NavLink>
         </li>
@@ -81,24 +86,23 @@ const Navbar = () => {
             href="https://www.instagram.com/unoelectromedicina/"
             target="_blank"
             rel="noopener noreferrer"
-            className="link icono selected">
+            className="link icono">
               <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
           </a>
-        </li>  
-        <li>
           <a
             href="https://www.facebook.com/uno.electromedicina/"
             target="_blank"
             rel="noopener noreferrer"
-            className="link icono selected">
+            className="link icono">
               <i className="fa fa-facebook-official fa-2x" aria-hidden="true" ></i>
           </a>
-        </li>   
+        </li>  
+         
       </ul> 
       <div className='burger' onClick={handleClick}>
-          <div className='linea1'></div>
-          <div className='linea2'></div>
-          <div className='linea3'></div>
+          <div className={toggle ? 'on1' : ''}></div>
+          <div className={toggle ? 'on2' : ''}></div>
+          <div className={toggle ? 'on3' : ''}></div>
         </div>  
     </StyledNav>
   )

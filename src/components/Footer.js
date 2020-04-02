@@ -4,7 +4,6 @@ import '../assets/font-awesome-4.7.0/css/font-awesome.min.css'
 import StyledFooter from '../assets/css/StyledFooter'
 
 
-
 function Footer() {
   return (
     <StyledFooter>

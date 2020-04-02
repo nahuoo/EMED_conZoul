@@ -7,20 +7,16 @@ const Contacto = styled.div `
     grid-column: repeat(2, 1fr);
     grid-gap: 5px;
     background-image: url("${fondo}");
-    width: 100vw;
-    max-width: 100%;
-    height: 200vh;  
     background-position: center;
     background-attachment: fixed; 
     background-repeat: no-repeat; 
     background-size: cover;
-    padding:10px;
     top: 8vh;
     overflow:hidden;
 
     
     .contenedorMapa{
-        margin:10vh;
+        margin:5vh;
     }
 
     .contenedorFormulario{
@@ -33,13 +29,13 @@ const Contacto = styled.div `
     display: flex;
     display: table-column;
     background: rgba(255, 255, 255, 0.5);
-    margin-top: 5vh;
-    margin-left: 5%;
-    
+    margin-top: 0px;
     justify-content: space-evenly;
     align-items: center;
-    padding: 6vh 0;
+    padding: 6vh;
     color: #000;
+    text-align: center;
+    
   }
 
     ul {

@@ -49,7 +49,7 @@ const Formulario = () => {
       />
 
       {/* el boton Submit*/}
-    <input className='submit' type='submit' value=' Enviar'/>
+    <input className='submit' type='submit' value='Enviar'/>
     </form>
     </StyledFormulario>
   )

@@ -29,7 +29,7 @@ const StyledFooter = styled.footer`
       
   }
   ul li a:hover {
-    color: #16A1B2;
+    color: #b30000;
   }
   .copyright {
     font-size: 8px;
