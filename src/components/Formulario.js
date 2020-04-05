@@ -8,7 +8,7 @@ const Formulario = () => {
  const handleSubmit = (event) => { 
   event.preventDefault()
 
-  let Mensaje = `name=${event.target[0].value}&email=${event.target[1].value}&message=${event.target[2].value}` 
+  let Mensaje = `nombre=${event.target[0].value}&localidad=${event.target[1].value}&tipo=${event.target[2].value}&pacientes=${event.target[3].value}&email=${event.target[4].value}&mensaje=${event.target[5].value}`
 
   fetch('http://192.168.0.2:4000/email', {
    method: 'post',
@@ -18,28 +18,59 @@ const Formulario = () => {
   .then(response => response.text())
   .then(data => console.log(data));
   }
-
+  
+  
   return(
     <StyledFormulario>
     <form onSubmit={handleSubmit}>
-      <h2 id='form'>Quieres escribirnos?</h2>
+      <h2 id='form' >Quieres escribirnos?</h2>
+
     {/* input del nombre */}    
       <input 
-       /* ref={nombre} */
+       
          placeholder='Nombre...'
         type='text'
 
       />
+     {/* input del localidad */}    
+
+     <input 
+       
+         placeholder='Localidad...'
+        type='text'
+
+      />
+       {/* input del tipo de lab */}    
+
+       Tipo de laboratorio:
+       <select>
+       <option value="Particular">Particular</option>
+       <option value="Hospital">Hospital</option>
+       <option value="Clinica">Clínica/Sanatorio</option>
+       <option value="Veterinaria">Veterinaria</option>
+       <option value="Investigacion">Investigación</option>
+      </select>
+
+      {/* input del pacientes */}    
+      
+     <input 
+       
+       placeholder='Pacientes por dia...'
+      type='number'
+
+    />
+
       {/* input del mail */}
       <input 
-       /* ref={email} */
+       
         placeholder='Email...'
-        type='text'
+        type='email'
         
       />
       {/* input del mensaje */}
+      
       <textarea 
-      /*  ref={mensaje} */
+      
         placeholder='Escribe un mensaje...'
         cols='80'
         rows='4'

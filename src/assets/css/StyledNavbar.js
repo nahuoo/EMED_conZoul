@@ -34,9 +34,10 @@ const StyledNav = styled.nav`
     position: relative;
     cursor: default;
     padding-top: 3px;
-    font-style: italic;
-    font-weight: bold;
-    font-size:1rem;
+    font-family: 'Neuton', serif;
+    
+  
+    font-size:1.2rem;
     bottom: 4.1vw;
     left: 2vw;
     letter-spacing: 0.5pt;
@@ -168,7 +169,7 @@ const StyledNav = styled.nav`
     bottom: 1.3vw;
     font-size:1.5rem;
     left: 1vw;
-    color: rgba(199, 0, 5, 0.8);
+    color: #fff;
   }
   .burger{
     display:none;

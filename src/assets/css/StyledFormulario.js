@@ -12,7 +12,7 @@ const StyledFormulario = styled.div `
     background: rgba(255, 255, 255, 0.5);
     padding-left: 30%;
 
- input,textarea{ 
+ input,textarea,select{ 
     position:relative;
     background-color: white;
     border: 1px solid #E3E3E3;

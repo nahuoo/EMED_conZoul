@@ -1,7 +1,7 @@
 import React from 'react'
 import ImagenHome from '../components/ImagenHome'
-
-
+import CuerpoHome from '../components/CuerpoHome'
+import Marcas from '../components/Marcas'
 import Formulario from '../components/Formulario'
 
 /* El modal de formulario 
@@ -31,6 +31,10 @@ const Home = () => {
   return (
     <div>
       <ImagenHome />
+      
+      <Marcas />
+      <CuerpoHome />
+   
       <Formulario />
    
     </div>

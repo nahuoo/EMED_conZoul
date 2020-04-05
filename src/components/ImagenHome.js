@@ -1,16 +1,12 @@
-import React from "react";
+import React from "react"
 import WavesSection from '../components/waves.js'
-import PageHeader from '../assets/css/StyleImagenHome';
+import PageHeader from '../assets/css/StyleImagenHome'
+import ScrollMarcas from './ScrollMarcas'
 
 
 
 // core components
-/* const handleClick = () =>
-  document.getElementById("name").scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-*/
+
 function ImagenHome() {
   let pageHeader = React.createRef();
 
@@ -28,8 +24,10 @@ function ImagenHome() {
     }
   });
 
+  
+
   const handleClick = () =>
-        document.getElementById("form").scrollIntoView({
+        document.getElementById('form').scrollIntoView({
           behavior: 'smooth',
           block: 'start',
         });
@@ -38,16 +36,17 @@ function ImagenHome() {
     
     <PageHeader> 
         <div className='contenedor' ref={pageHeader}>                                 
-          <h1 >Uno Electromedicina</h1>
-          <h2>Venta y Servicio técnico</h2>            
-            <button type='button' onClick={handleClick}>                    
+          <h1 ref={pageHeader}>Uno Electromedicina</h1>
+          <h2 ref={pageHeader}>Servicio técnico y venta de equipamiento e insumos de laboratorio.</h2>            
+            <button ref={pageHeader} type='button' onClick={handleClick}>                    
             Contáctenos
             </button >          
         </div>
       <span> 
           <img src={require('../assets/img/logouno.png')} alt='logo'/> 
         </span>
-      <WavesSection />
+        <div className='descripcion'>hola </div>
+      <ScrollMarcas />
     </PageHeader>   
     
   );

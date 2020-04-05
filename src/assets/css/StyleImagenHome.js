@@ -14,7 +14,7 @@ const PageHeader = styled.div `
   background-image: url("${fotoTaller}");
   width: 100%;
   max-width: 100%;
-  height: 120vh;  
+  height: 110vh;  
   background-position: center;
   background-attachment: fixed; 
   background-repeat: no-repeat; 
@@ -46,7 +46,7 @@ const PageHeader = styled.div `
 
     span{
         position: absolute;
-        top:41vh;
+        top:36vh;
         margin-left:40%;
     }
     button{
@@ -66,6 +66,13 @@ const PageHeader = styled.div `
             :hover{
                 background:black;}
         font-family: 'Roboto', sans-serif;
+    }
+
+    .descripcion{
+        position:absolute;
+        background: rgba(255, 255, 255, 0.5);
+        height: 10vh;
+        top: 70vh;
     }
 
     h1{
@@ -140,7 +147,7 @@ const PageHeader = styled.div `
       span{
         position: absolute;
         top:14vh;
-        left:0vw;
+        left:-10vw;
     }
 
     h1{
@@ -160,10 +167,14 @@ const PageHeader = styled.div `
             border: 0px solid #000;
         }
     }
-    @media screen and (max-height: 700px) {
-        height: 118vh; 
+    @media screen and (max-height: 300px) {
+        height: 80vh; 
 
-        
+        span{
+        position: absolute;
+        top:5vh;
+        left:25vw;
+    }
         
     }
 `;
