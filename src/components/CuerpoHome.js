@@ -11,7 +11,9 @@ const Bodyy = styled.div`
   margin-top: 10vh;
   padding:5%;
   overflow: hidden;
-
+@media screen and (max-width:400px){
+  grid-template-columns: repeat(250px);
+}
   h1{
     grid-column: 1/4;
     text-align:center;
