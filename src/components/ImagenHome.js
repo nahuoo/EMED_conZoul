@@ -35,17 +35,20 @@ function ImagenHome() {
   return (
     
     <PageHeader> 
-        <div className='contenedor' ref={pageHeader}>                                 
-          <h1 ref={pageHeader}>Uno Electromedicina</h1>
-          <h2 ref={pageHeader}>Servicio técnico y venta de equipamiento e insumos de laboratorio.</h2>            
-            <button ref={pageHeader} type='button' onClick={handleClick}>                    
+        <div className='contenedor'>                          
+          <h1>Uno Electromedicina</h1>
+          <h2>Servicio técnico y venta de equipamiento e insumos de laboratorio.</h2>            
+            <button type='button' onClick={handleClick}>                    
             Contáctenos
             </button >          
         </div>
       <span> 
-          <img src={require('../assets/img/logouno.png')} alt='logo'/> 
+          <img ref={pageHeader} src={require('../assets/img/logouno.png')} alt='logo'/> 
         </span>
-        <div className='descripcion'>hola </div>
+        <div className='descripcion'>
+          <h3>Servicio técnico oficial - Mantenimientos preventivos - Alquiler / Comodato de equipos </h3>
+          <h3>Reactivos - Descartables - Consumibles para todas las marcas</h3>
+        </div>
       <ScrollMarcas />
     </PageHeader>   
     

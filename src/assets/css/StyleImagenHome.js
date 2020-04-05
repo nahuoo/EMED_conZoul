@@ -73,6 +73,18 @@ const PageHeader = styled.div `
         background: rgba(255, 255, 255, 0.5);
         height: 10vh;
         top: 70vh;
+        width:100%;
+    }
+
+    h3{
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        padding-top:.5rem;
+        letter-spacing: 0.5px;
+        color: black;
+        text-align: center;
+        
     }
 
     h1{
