@@ -11,8 +11,6 @@ import NavBar from './components/navbar'
 import GlobalStyle from './assets/css/GlobalStyle'
 
 
-
-
 function App() {
 
   

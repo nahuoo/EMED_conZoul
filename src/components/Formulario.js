@@ -50,7 +50,7 @@ const Formulario = () => {
   return(
     <StyledFormulario>
     <form onSubmit={handleSubmit}>
-      <h2 id='form' className="title" >Quieres escribirnos?</h2>
+      <h2 id='form' > ¿Quieres escribirnos?</h2>
 
     {/* input del nombre */}    
       <input 

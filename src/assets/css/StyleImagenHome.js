@@ -4,21 +4,16 @@ import styled from 'styled-components';
 
 const PageHeader = styled.div `
 
-  
   display: flex;  
   flex-wrap: nowrap;
   margin: 0; 
   padding: 0px;
   position: relative;
   align-items:center;
-  
   width: 100%;
   max-width: 100%;
   height: 110vh;  
-  
   overflow:hidden;
-  
-
 
     .contenedor{
         text-align: left;
@@ -47,16 +42,17 @@ const PageHeader = styled.div `
         top:34vh;
         margin-left:40%;
     }
-    button{
+    .button{
         position:relative;
         text-align: center;
         background-color: transparent;
         border: 1px solid #E3E3E3;
         border-radius: 30px;
+        text-decoration: none;
         color: #F9F8F8;
-        height: 2em;
+        height: 2.2em;
         left:3%;
-        width: 10vw;
+        width: 12vw;
         font-size: 0.8571em;
         margin-top:0px;
         letter-spacing:1;

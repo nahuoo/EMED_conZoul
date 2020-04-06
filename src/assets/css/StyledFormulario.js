@@ -15,7 +15,7 @@ const StyledFormulario = styled.div `
  input,textarea,select{ 
     position:relative;
     background-color: white;
-    border: 1px solid #E3E3E3;
+    border: 2px solid #E3E3E3;
     border-radius: 30px;
     color: #2c2c2c;
     height: 2em;
@@ -62,11 +62,11 @@ const StyledFormulario = styled.div `
  }
 
  h2{
-   font-family: 'Neuton', serif;
-   font-size:2rem;
-   letter-spacing: 0.5px;
-   color: black;
-   text-align: flex-start;   
+    font-family: 'Neuton', serif;
+    font-size:2rem;
+    letter-spacing: 0.5px;
+    color: white;
+    text-align: flex-start;   
    padding-right: 0%;
    padding-top: 10px;
    padding-bottom: 10px;

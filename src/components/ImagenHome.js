@@ -2,6 +2,7 @@ import React from "react"
 import WavesSection from '../components/waves.js'
 import PageHeader from '../assets/css/StyleImagenHome'
 import ScrollMarcas from './ScrollMarcas'
+import { Link } from 'react-router-dom'
 
 
 
@@ -26,11 +27,6 @@ function ImagenHome() {
 
   
 
-  const handleClick = () =>
-        document.getElementById('form').scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
   
   return (
     
@@ -38,9 +34,9 @@ function ImagenHome() {
         <div className='contenedor'>                          
           <h1>Uno Electromedicina</h1>
           <h2>Servicio técnico y venta de equipamiento e insumos de laboratorio.</h2>            
-            <button type='button' onClick={handleClick}>                    
+            <Link className='button' type='button' to="/contact" >                    
             Contáctenos
-            </button >          
+            </Link >          
         </div>
       <span> 
           <img ref={pageHeader} src={require('../assets/img/logouno.png')} alt='logo'/> 
