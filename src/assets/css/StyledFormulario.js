@@ -62,11 +62,11 @@ const StyledFormulario = styled.div `
  }
 
  h2{
-    font-family: 'Neuton', serif;
-    font-size:2rem;
-    letter-spacing: 0.5px;
-    color: black;
-    text-align: flex-start;   
+   font-family: 'Neuton', serif;
+   font-size:2rem;
+   letter-spacing: 0.5px;
+   color: black;
+   text-align: flex-start;   
    padding-right: 0%;
    padding-top: 10px;
    padding-bottom: 10px;
@@ -78,7 +78,6 @@ const StyledFormulario = styled.div `
 
  @media screen and (max-width: 800px){
 
-   
 
    h2{
       padding-left: 10%;
@@ -90,7 +89,9 @@ const StyledFormulario = styled.div `
    padding-left: 15%;
    justify-content: center;
 
-
+   h2{
+      padding-left: 5%;
+   }
    input,textarea{ 
     ::placeholder{
        margin-left:15px;
