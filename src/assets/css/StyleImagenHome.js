@@ -6,7 +6,7 @@ const PageHeader = styled.div `
 
   display: flex;  
   flex-wrap: nowrap;
-  margin: 0; 
+  margin: 0px; 
   padding: 0px;
   position: relative;
   align-items:center;
@@ -52,7 +52,7 @@ const PageHeader = styled.div `
         color: #F9F8F8;
         height: 2.2em;
         left:3%;
-        width: 12vw;
+        width: 15vw;
         font-size: 0.8571em;
         margin-top:0px;
         letter-spacing:1;
@@ -121,7 +121,7 @@ const PageHeader = styled.div `
         width:500px;
         height:100px;
       }
-      button{
+      .button{
             width: 150px;
             
             }
@@ -142,13 +142,15 @@ const PageHeader = styled.div `
     }
 
     }
+
+    /* mobil */
      @media screen and (max-width: 500px) {
 
         height:120vh; 
 
         .contenedor{
         width:350px;
-        height:125px;
+        height:130px;
         padding:3px;
         padding-top:0rem;
         top:-100px;
@@ -177,20 +179,26 @@ const PageHeader = styled.div `
       
     
 
-     button{
-            width: 100px;
+     .button{
+            width: 140px;
             background: rgba(199, 0, 5, 0.8);
-            left: 35%;
-            margin-top: 20px;
+            left: 40%;
+            margin-top: 100px;
             border: 0px solid #000;
         }
     }
+
+    /*tablet*/
+    
     @media screen and (max-height: 300px) {
         height: 150vh; 
-
+    .contenedor{
+        top:-65px;
+        height: 110px;
+    }
         span{
         position: absolute;
-        top:8vh;
+        top:20vh;
         left:27vw;
     }
 
