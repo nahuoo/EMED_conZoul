@@ -5,13 +5,14 @@ const Bodyy = styled.div`
   display: grid;
   grid-template-columns: repeat(3,250px);
   grid-gap: 2vh;
+  background: #2a2f33;
   align-items: center;
   justify-content: center;
   width: 90%;
   margin-top: 10vh;
   padding:5%;
   overflow: hidden;
-  background: white;
+
 
 @media screen and (max-width:500px){
   grid-template-columns: auto;
