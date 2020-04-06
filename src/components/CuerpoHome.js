@@ -11,9 +11,18 @@ const Bodyy = styled.div`
   margin-top: 10vh;
   padding:5%;
   overflow: hidden;
-@media screen and (max-width:400px){
-  grid-template-columns: repeat(250px);
+
+@media screen and (max-width:500px){
+  grid-template-columns: auto;
+  
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height:100vh;
+  
+  
 }
+
   h1{
     grid-column: 1/4;
     text-align:center;
@@ -32,6 +41,7 @@ const Bodyy = styled.div`
     cursor: pointer;
     font-size: 0.8571em;
     display: flex;
+    user-select: none;
     
     
     align-items: center;

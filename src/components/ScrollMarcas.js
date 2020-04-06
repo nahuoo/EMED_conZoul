@@ -3,7 +3,7 @@ import Styled from 'styled-components'
 import deltalab from '../assets/img/logos/deltalab.png'
 import labix from '../assets/img/logos/labix.png'
 import diestro from '../assets/img/logos/Logo-Diestro.png'
-import mindray from '../assets/img/logos/MINDRAY.jpg'
+import mindray from '../assets/img/logos/MINDRAY.png'
 import wiener from '../assets/img/logos/wiener.jpg'
 import radiometer from '../assets/img/logos/RADIOMETER.png'
 import metrolab from '../assets/img/logos/METROLAB.png'
@@ -20,8 +20,13 @@ const Body = Styled.div`
     width:100%;
     top:81vh;
 	
-	
+@media screen and (max-width: 500px) {
+    top:100vh;
+}
 
+@media screen and (max-height: 300px) {
+    top:100vh;
+}
 
 // Animation
 @keyframes scroll {

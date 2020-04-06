@@ -32,6 +32,7 @@ const PageHeader = styled.div `
         padding-top:1rem;
         width:40vw;
         background: rgba(199, 0, 5, 0.8);
+        top: -20px;
                  
     }
 
@@ -40,13 +41,13 @@ const PageHeader = styled.div `
         align-content:center;
         justify-content: flex-start;
         margin-left: 24px;
-        margin-top: 15%;
+        margin-top: 14%;
         z-index: 1;
     }
 
     span{
         position: absolute;
-        top:36vh;
+        top:34vh;
         margin-left:40%;
     }
     button{
@@ -60,11 +61,13 @@ const PageHeader = styled.div `
         left:3%;
         width: 10vw;
         font-size: 0.8571em;
-        margin-top:3px;
+        margin-top:0px;
         letter-spacing:1;
         cursor:pointer;
             :hover{
-                background:black;}
+                background:black;
+                border: 1px solid #000
+                }
         font-family: 'Roboto', sans-serif;
     }
 
@@ -148,17 +151,27 @@ const PageHeader = styled.div `
     }
      @media screen and (max-width: 500px) {
 
-        height:122vh; 
+        height:120vh; 
 
         .contenedor{
         width:350px;
-        height:120px;
-        padding:4px;
-        padding-top:1rem;
+        height:125px;
+        padding:3px;
+        padding-top:0rem;
+        top:-100px;
         }
+
+        .descripcion{
+        position:absolute;
+        background: rgba(255, 255, 255, 0.5);
+        height: 24vh;
+        top: 65vh;
+        width:100%;
+    }
+
       span{
         position: absolute;
-        top:14vh;
+        top:10vh;
         left:-10vw;
     }
 
@@ -180,14 +193,22 @@ const PageHeader = styled.div `
         }
     }
     @media screen and (max-height: 300px) {
-        height: 80vh; 
+        height: 150vh; 
 
         span{
         position: absolute;
-        top:5vh;
-        left:25vw;
+        top:8vh;
+        left:27vw;
     }
+
+    .descripcion{
+        position:absolute;
+        background: rgba(255, 255, 255, 0.5);
+        height: 24vh;
+        top: 100vh;
+        width:100%;
         
+    }
     }
 `;
 
