@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import fotoTaller from '../img/lab3.jpg';
+
   
 
 const PageHeader = styled.div `
@@ -11,14 +11,11 @@ const PageHeader = styled.div `
   padding: 0px;
   position: relative;
   align-items:center;
-  background-image: url("${fotoTaller}");
+  
   width: 100%;
   max-width: 100%;
   height: 110vh;  
-  background-position: center;
-  background-attachment: fixed; 
-  background-repeat: no-repeat; 
-  background-size: cover;
+  
   overflow:hidden;
   
 
