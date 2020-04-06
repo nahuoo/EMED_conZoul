@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background: grey;
+  background: #273441;
   padding: 7.5vh 0;
   color: #f2f2f2;
 

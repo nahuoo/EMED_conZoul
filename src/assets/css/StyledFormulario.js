@@ -9,7 +9,7 @@ const StyledFormulario = styled.div `
     align-content: center;
     justify-content:center;
     font-family: 'Roboto', sans-serif;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
     padding-left: 30%;
 
  input,textarea,select{ 

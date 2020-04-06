@@ -1,8 +1,13 @@
 import React from 'react'
 import StyledFormulario from '../assets/css/StyledFormulario'
+import StyledModal from '../assets/css/StyledModal'
 
 /* El formulario */
 const Formulario = () => {
+
+  /*state del Modal */
+  const [visible, setVisible] = React.useState(false)
+
 
  // Falta Logica de comprobacion de campos
  const handleSubmit = (event) => { 
@@ -19,6 +24,28 @@ const Formulario = () => {
   .then(data => console.log(data));
   }
   
+  /*logica del modal*/
+  const handleClick = () => {
+    setVisible(!visible)
+  }
+
+  if (visible === true) {
+    return(
+      <StyledModal>
+          <div className='rectangulo'>
+              <h2>Envío realizado</h2>
+              <p>Nos contactaremos con usted a la brevedad.</p>
+              <button 
+              type=''
+              onClick={handleClick}
+              >
+              cerrar
+              </button>
+
+          </div>
+      </StyledModal>
+  )
+  }
   
   return(
     <StyledFormulario>
@@ -80,7 +107,12 @@ const Formulario = () => {
       />
 
       {/* el boton Submit*/}
-    <input className='submit' type='submit' value='Enviar'/>
+    <input 
+      className='submit' 
+      type='submit' 
+      value='Enviar'
+      onClick={handleClick}
+      />
     </form>
     </StyledFormulario>
   )

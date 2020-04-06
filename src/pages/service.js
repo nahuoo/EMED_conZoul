@@ -1,11 +1,18 @@
 import React from 'react'
+import Modal from '../components/Modal'
+import styled from 'styled-components'
+
+const Prueba = styled.div`
+  height: 100vh;
+`
 
 const Service = () => {
 
+
   return (
-    <div>
-      <h1>Hola desde Servicio Tecnico</h1>
-    </div>
+    <Prueba>
+      <Modal /> 
+    </Prueba>
   )
 }
 

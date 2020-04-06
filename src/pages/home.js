@@ -3,41 +3,31 @@ import ImagenHome from '../components/ImagenHome'
 import CuerpoHome from '../components/CuerpoHome'
 import Marcas from '../components/Marcas'
 import Formulario from '../components/Formulario'
+import styled from 'styled-components'
+import fotoTaller from '../assets/img/lab3.jpg';
 
-/* El modal de formulario 
-const EnvioExitoso = () => {  
-    return ReactDOM.createPortal((
-        <div>
-            <h5>Enviado!</h5>
-            <p>Nos contactaremos con usted a la brevedad.</p>
-            <div>
-                <button
-                   className="btn-neutral "
-                   color="link"
-                   type="button"
-                   onClick={() => setVisible(false)}
-                 >
-                    Cerrar
-                </button>
-            </div>
-        </div>
+const Transparente = styled.div `
+  background: rgba(255, 255, 255, 0.4);
+  background-image: url("${fotoTaller}");
+  background-position: center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+ 
   
-    ),document.getElementById('modal-root'))
-  }
+`
+
 
 /*  El Home */
 const Home = () => {
  /* const [visible, setVisible] = React.useState(false) */
   return (
-    <div>
+    <Transparente>
       <ImagenHome />
-      
       <Marcas />
       <CuerpoHome />
-   
       <Formulario />
-   
-    </div>
+    </Transparente>
   )
 }
 
