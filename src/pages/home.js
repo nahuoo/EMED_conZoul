@@ -20,9 +20,9 @@ const Transparente = styled.div `
 
 /*  El Home */
 const Home = () => {
- /* const [visible, setVisible] = React.useState(false) */
+
   return (
-    <Transparente>
+    <Transparente >
       <ImagenHome />
       <Marcas />
       <CuerpoHome />

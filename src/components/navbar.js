@@ -12,15 +12,15 @@ const Navbar = () => {
     const updateNavbarColor = () => {
       
       if (
-        document.documentElement.scrollTop > 400 ||
-        document.body.scrollTop > 400
+        document.documentElement.scrollTop > 100 ||
+        document.body.scrollTop > 100
       ) {
         setNavbarColor('rgba(22, 161, 178,0.8)')
         setNavbarAnimation('Animation')
 
       } else if (
-        document.documentElement.scrollTop < 401 ||
-        document.body.scrollTop < 401
+        document.documentElement.scrollTop < 101 ||
+        document.body.scrollTop < 101
       ) {
         setNavbarColor('rgba(0,0,0,0)')
         setNavbarAnimation('')
