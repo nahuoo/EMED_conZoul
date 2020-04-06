@@ -225,6 +225,16 @@ const StyledNav = styled.nav`
   .navActive{
     color: rgba(199, 0, 5, 0.8);
   }
+  .arrow{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0px;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+
+
+  }
 }
 `  
 export default StyledNav
