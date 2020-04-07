@@ -1,16 +1,17 @@
 import styled from 'styled-components'
 
-const StyledModal = styled.div `
-    background: rgba(0, 0, 0, 0.2);
-    position: relative;
-    background-size: cover;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+const StyledModal = styled.div ` 
     
-
-   
-
+        display: ${(props) => props.modal|| 'none'};
+        z-index:22;
+    .modal{
+        background: rgba(0, 0, 0, 0.2);
+        position: relative;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
 
     .rectangulo{ 
         background: linear-gradient(124deg, rgba(22,161,178,0.4) 0%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 75%, rgba(179,0,0,0.4) 100%);
@@ -28,6 +29,7 @@ const StyledModal = styled.div `
         border: 2px solid #E3E3E3;
         border-radius: 30px;
         box-shadow: 20px 20px 30px -5px rgba(0, 0, 0, 0.2);
+
         
 
     }

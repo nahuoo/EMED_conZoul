@@ -15,6 +15,7 @@ form{
 }
 
  input,textarea,select{ 
+    z-index:0;
     position:relative;
     background-color: white;
     border: 2px solid #E3E3E3;
@@ -44,10 +45,10 @@ form{
 
  .submit{
       width: 3vw;
-      color:white;
-      background:rgba(199, 0, 5, 0.8);
-      text-align:center;
-      padding-left:0;
+      color: white;
+      background: rgba(199, 0, 5, 0.8);
+      text-align: center;
+      padding-left: 0;
       width: 20%;
       min-width:60px;
     }
@@ -58,15 +59,14 @@ form{
  }
 
  h2{
-    font-family: 'Neuton', serif;
-    font-size:2rem;
-    letter-spacing: 0.5px;
-    color: black;
-    text-align: center;   
+   font-family: 'Neuton', serif;
+   font-size: 2rem;
+   letter-spacing: 0.5px;
+   color: black;
+   text-align: center;   
    padding-top: 10px;
    padding-bottom: 10px;
-   margin-bottom:30px;
-    
+   margin-bottom: 30px;
  }
 
  .left{
@@ -94,13 +94,13 @@ form{
    width: 25%;
 
  }
-
+ }
  
   /* tablet */
   @media screen and (max-height: 500px){
    height: 200vh;
   }
- }`
+ `
   export default StyledFormulario
 
 
