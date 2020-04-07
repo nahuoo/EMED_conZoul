@@ -118,12 +118,18 @@ const StyledNav = styled.nav`
     display: inline;
   }
   /* Animaciones del menu */
-  .active, .activeProds{
+  .active{
     transform: translateY(0%) translateX(0%) scale(1);
     opacity: 100%;
   }
-  .hidden, .hiddenProds{
+  .hidden{
     transform: translateY(-56%) translateX(43%) scale(0);
+    opacity: 0%;
+  }
+  .activeProds{
+    opacity: 100%;
+  }
+  .hiddenProds{
     opacity: 0%;
   }
   .productos{
@@ -132,7 +138,7 @@ const StyledNav = styled.nav`
     top: 0;
     right: 0;
     padding: 5vw 10vw;
-    transition: all 1s ease-in;
+    transition: all 0.6s ease-in;
     ul {
       display: flex;
       flex-direction: column;
@@ -175,19 +181,29 @@ const StyledNav = styled.nav`
   .productos{
     position: absolute;
     background: rgba(22, 161, 178, 0.8);
+    width: 93vw;
+    padding: 2vw 5vw;
     top: 0;
     right: 0;
-    padding: 5vw 10vw;
-    transition: all 1s ease-in;
+    transition: all 0.6s ease-in;
+
     ul {
-      display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
+      display: flex;
+      height: 40vw;
     }
     ul li{
+      width: 30vw;
       text-align: left;
-      font-size: 1rem;
+      font-size: 0.6em;
       margin-bottom: 2vw;
+      padding: 0 2vw 2vw;
+    }
+    ul li:last-child{
+      border-bottom: 1px solid white;
       padding-bottom: 2vw;
+      margin-bottom: 2vw; 
     }
   }
 }
@@ -271,7 +287,35 @@ const StyledNav = styled.nav`
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
   }
-  
+  .productos{
+    position: absolute;
+    background: rgba(22, 161, 178, 0.8);
+    width: 17vw;
+    padding: 1vw 1.5vw;
+    top: 3.9vw;
+    right: 5vw;
+    transition: all 0.6s ease-in;
+
+    ul {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: flex;
+      height: initial;
+    }
+    ul li{
+      width: 30vw;
+      text-align: left;
+      font-size: 1em;
+      margin-bottom: 1vw;
+      padding: 0 1vw 1vw;
+    }
+    ul li:last-child{
+      border-bottom: none;
+      padding-bottom: 1vw;
+      margin-bottom: 0; 
+    } 
+  }
+
 }
 `  
 export default StyledNav
