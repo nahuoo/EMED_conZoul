@@ -104,6 +104,7 @@ const StyledNav = styled.nav`
     color: white;
     letter-spacing: 1pt;
     transition: all 0.2s ease 0s;
+    
   }
   ul li:last-child{
     padding-bottom: 0;

@@ -79,9 +79,7 @@ form{
    
    input,textarea, select{ 
       width: 60vw;
-    ::placeholder{
-       margin-left:15px;
-    }
+      padding: 10vh;
       
  }
 
@@ -91,7 +89,7 @@ form{
    left:0px;
    background:rgba(199, 0, 5, 0.8);
    padding-left:0px;
-   width: 25%;
+   width: 30%;
 
  }
  }
