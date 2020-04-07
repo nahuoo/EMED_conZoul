@@ -69,7 +69,7 @@ const Formulario = () => {
       />
        {/* input del tipo de lab */}    
 
-       Tipo de laboratorio:
+       <p className='left'>Tipo de laboratorio: </p>
        <select>
        <option value="Particular">Particular</option>
        <option value="Hospital">Hospital</option>
