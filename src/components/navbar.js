@@ -8,6 +8,7 @@ const Navbar = () => {
   const [ navbarColor, setNavbarColor ] = React.useState('rbga(0,0,0,0)')
   const [ navbarAnimation, setNavbarAnimation ] = React.useState('')
   const [ toggle,setToggle ] = React.useState(false)
+  const [ products, setProducts ] = React.useState(false)
   React.useEffect(() => {
     const updateNavbarColor = () => {
       
@@ -36,7 +37,13 @@ const Navbar = () => {
   function handleClick(){
 
     setToggle(!toggle)
-  } 
+  }
+  const handleEnter = () =>{
+    setProducts(true)
+  }
+  const handleLeave = () =>{
+    setProducts(false)
+  }
   
   return(
       <StyledNav background={navbarColor} className={navbarAnimation}>
@@ -53,7 +60,8 @@ const Navbar = () => {
           <NavLink
             to="/about"
             className="link"
-            activeClassName='navActive'>
+            activeClassName='navActive'
+            onClick={handleClick}>
               Sobre Nosotros
           </NavLink>
         </li>
@@ -61,7 +69,8 @@ const Navbar = () => {
           <NavLink
             to="/contact"
             className="link"
-            activeClassName='navActive'>
+            activeClassName='navActive'
+            onClick={handleClick}>
               Contáctenos
           </NavLink>
         </li>
@@ -69,15 +78,34 @@ const Navbar = () => {
           <NavLink
             to="/service"
             className="link"
-            activeClassName='navActive'>
+            activeClassName='navActive'
+            onClick={handleClick}>
               Servicio Técnico
           </NavLink>
         </li>
-        <li>
+        <li onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
           <p className="link">
             Productos
             <span className="arrow"></span> 
           </p>
+          <div className={`productos ${products ? 'activeProds' : 'hiddenProds' }`}>
+            <ul>
+              <li>Agitadores</li>
+              <li>Autoanalizadores quimica clínica</li>
+              <li>Baño termicos</li>
+              <li>Biomarcadores de urgencia</li>
+              <li>Cabinas flujo laminar</li>
+              <li>Centrífugas</li>
+              <li>Coagulómetro</li>
+              <li>Contadores hematológicos</li>
+              <li>Estufas de cultivo</li>
+              <li>Estufas de esterilización</li>
+              <li>Gases en sangre</li>
+              <li>Ion selectivo</li>
+              <li>Microscopios</li>
+              <li>Quimioluminiscencia</li>
+            </ul>
+          </div>
         </li>
         <li>
           <a

@@ -14,7 +14,7 @@ const Bodyy = styled.div`
   overflow: hidden;
   background: #303136;
   height: 40vh;
-  user-select: none;
+  
 
 @media screen and (max-width:500px){
   display: flex;

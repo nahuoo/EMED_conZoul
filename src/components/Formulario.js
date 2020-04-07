@@ -6,7 +6,7 @@ import StyledModal from '../assets/css/StyledModal'
 const Formulario = () => {
 
   /*state del Modal */
-  const [visible, setVisible] = React.useState(false)
+  const [visible, setVisible] = React.useState("none")
 
 
  // Falta Logica de comprobacion de campos
@@ -29,9 +29,11 @@ const Formulario = () => {
     setVisible(!visible)
   }
 
-  if (visible === true) {
-    return(
-      <StyledModal>
+  
+  return(
+    <StyledFormulario>
+      <StyledModal modal={visible}>
+        <div className='modal'>
           <div className='rectangulo'>
               <h2>Envío realizado</h2>
               <p>Nos contactaremos con usted a la brevedad.</p>
@@ -43,12 +45,8 @@ const Formulario = () => {
               </button>
 
           </div>
+        </div>
       </StyledModal>
-  )
-  }
-  
-  return(
-    <StyledFormulario>
     <form onSubmit={handleSubmit}>
       <h2 id='form' > ¿Quieres escribirnos?</h2>
 
@@ -69,7 +67,7 @@ const Formulario = () => {
       />
        {/* input del tipo de lab */}    
 
-       Tipo de laboratorio:
+       <h5 className='left'>Tipo de laboratorio: </h5>
        <select>
        <option value="Particular">Particular</option>
        <option value="Hospital">Hospital</option>
@@ -84,15 +82,15 @@ const Formulario = () => {
        
        placeholder='Pacientes por dia...'
       type='number'
-
+      min='0'
     />
 
       {/* input del mail */}
       <input 
        
         placeholder='Email...'
-        type='email'
         
+        pattern='/^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/' required
       />
       {/* input del mensaje */}
       
