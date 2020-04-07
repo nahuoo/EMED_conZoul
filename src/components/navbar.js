@@ -83,8 +83,8 @@ const Navbar = () => {
               Servicio Técnico
           </NavLink>
         </li>
-        <li onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
-          <p className="link">
+        <li>
+          <p className="link" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
             Productos
             <span className="arrow"></span> 
           </p>

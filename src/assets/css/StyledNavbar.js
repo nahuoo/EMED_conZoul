@@ -129,9 +129,11 @@ const StyledNav = styled.nav`
   }
   .activeProds{
     opacity: 100%;
+    z-index: 2;
   }
   .hiddenProds{
     opacity: 0%;
+    z-index: -2;
   }
   .productos{
     position: absolute;
