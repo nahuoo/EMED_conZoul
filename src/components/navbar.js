@@ -53,7 +53,7 @@ const Navbar = () => {
           exact>
             <img src={require('../assets/img/logouno.png')} alt='logo'/>
         </NavLink>
-        <span className="title">Uno Electromedicina</span>     
+        <span className="title" to="/" >Uno Electromedicina</span>     
       </div>
        <ul className={`ListaLink ${toggle ? 'active' : 'hidden' }`}>
         <li>
@@ -76,7 +76,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/service"
+            to="/contact"
             className="link"
             activeClassName='navActive'
             onClick={handleClick}>
@@ -96,7 +96,7 @@ const Navbar = () => {
               <li>Biomarcadores de urgencia</li>
               <li>Cabinas flujo laminar</li>
               <li>Centrífugas</li>
-              <li>Coagulómetro</li>
+              <li>Coagulómetros</li>
               <li>Contadores hematológicos</li>
               <li>Estufas de cultivo</li>
               <li>Estufas de esterilización</li>

@@ -1,17 +1,22 @@
 import styled from 'styled-components'
 
+
+
 const StyledFormulario = styled.div ` 
     padding: 10vh;
     margin-top: 20vh;
     font-family: 'Roboto', sans-serif;
     background: rgba(255, 255, 255, 0.7);
     height: 80vh;
+
+    
    
 form{
    display:flex;
    flex-direction: column;
    justify-content: center ;
    align-items: center;
+   
 }
 
  input,textarea,select{ 
@@ -52,12 +57,16 @@ form{
       width: 20%;
       min-width:60px;
     }
+ 
+ 
 
  input:focus, textarea:focus{
-    border-radius: 0.50rem 0.50rem 0 0;  
-    color: #2c2c3c; 
+    border-radius: 0.50rem 0.50rem 0 0; 
+ 
+    
  }
 
+ 
  h2{
    font-family: 'Neuton', serif;
    font-size: 2rem;
@@ -79,7 +88,9 @@ form{
    
    input,textarea, select{ 
       width: 60vw;
-      padding: 10vh;
+      padding: 0vh;
+      padding-left:10px;
+      
       
  }
 

@@ -180,11 +180,11 @@ const PageHeader = styled.div `
     
 
      .button{
-            width: 140px;
+            min-width: 160px;
             background: rgba(199, 0, 5, 0.8);
             left: 40%;
             margin-top: 100px;
-            border: 0px solid #000;
+            border: 1px solid #000;
         }
     }
 
@@ -210,7 +210,13 @@ const PageHeader = styled.div `
         width:100%;
         
     }
-    }
+    .button{
+            min-width: 160px;
+            background: rgba(199, 0, 5, 0.8);
+            left: 40%;
+            margin-top: 100px;
+            border: 1px solid #000;
+    }}
 `;
 
 export default PageHeader;

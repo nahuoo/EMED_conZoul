@@ -14,6 +14,20 @@ const Contacto = styled.div `
     top: 8vh;
     overflow:hidden;
 
+@media screen and (max-width: 400px) {
+    top: 3vh;
+    grid-gap: 3px;
+    left: -10px;
+    .contenedorMapa{
+        margin-top:3vh;
+        margin-bottom:5vh;
+    }
+    .contenedorFormulario{
+      margin-top:0px;
+        
+    }
+
+}
     
     .contenedorMapa{
         margin:5vh;

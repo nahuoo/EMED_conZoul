@@ -3,18 +3,19 @@ import styled from 'styled-components'
 const StyledModal = styled.div ` 
     
         display: ${(props) => props.modal|| 'none'};
-        z-index:22;
+        
     .modal{
-        background: rgba(0, 0, 0, 0.2);
-        position: relative;
-        background-size: cover;
         margin: 0px;
         padding: 0px;
+        position:fixed;
+        background: black; 
         height: 100%;
+           
     }
 
     .rectangulo{ 
-        background: linear-gradient(124deg, rgba(22,161,178,0.4) 0%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 75%, rgba(179,0,0,0.4) 100%);
+        
+        background: #273441;
         position:fixed;
         display:flex;
         align-items:center;
@@ -22,10 +23,10 @@ const StyledModal = styled.div `
         justify-content: space-around;
         text-align: center;
         padding: 10px;
-        height: 30%;
-        width:20%;
-        top:30vh;
-        left:37vw;
+        height: 50%;
+        width:50%;
+        top:20vh;
+        left:25vw;
         border: 2px solid #E3E3E3;
         border-radius: 30px;
         box-shadow: 20px 20px 30px -5px rgba(0, 0, 0, 0.2);
@@ -37,13 +38,13 @@ const StyledModal = styled.div `
     h2{
         font-size: 2em;
         font-family:'Neuton', serif;
-        color: black;
+        color: white;
         
     }
 
     p{
         font-family:'Neuton', sans-serif;
-        color: black;
+        color: white;
         font-size: 1.2em;
     }
 

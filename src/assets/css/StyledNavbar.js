@@ -32,7 +32,7 @@ const StyledNav = styled.nav`
   }
   .title{
     position: relative;
-    cursor: default;
+    cursor: pointer;
     padding-top: 3px;
     font-family: 'Neuton', serif;
     font-size:1.2rem;
@@ -278,6 +278,7 @@ const StyledNav = styled.nav`
   .link:hover{
     background-color: rgba(199, 0, 5, 0.8);
     color: #fff;   
+    cursor: pointer;
   }
   .navActive{
     color: rgba(199, 0, 5, 0.8);
@@ -294,10 +295,12 @@ const StyledNav = styled.nav`
     position: absolute;
     background: rgba(22, 161, 178, 0.8);
     width: 17vw;
+    font-size:0.9em;
+    padding-bottom: 1vw;
     padding: 1vw 1.5vw;
     top: 3.9vw;
     right: 5vw;
-    transition: all 0.6s ease-in;
+    transition: all 0.2s ease-in;
 
     ul {
       flex-direction: column;
