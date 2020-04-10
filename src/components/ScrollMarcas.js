@@ -4,6 +4,7 @@ import deltalab from '../assets/img/logos/deltalab.png'
 import labix from '../assets/img/logos/labix.png'
 import diestro from '../assets/img/logos/Logo-Diestro.png'
 import mindray from '../assets/img/logos/MINDRAY.png'
+import mindray2 from '../assets/img/logos/MINDRAY.jpg'
 import wiener from '../assets/img/logos/wiener.jpg'
 import radiometer from '../assets/img/logos/RADIOMETER.png'
 import metrolab from '../assets/img/logos/METROLAB.png'
@@ -81,7 +82,7 @@ const Body = Styled.div`
 		height: 90px;
 		width: auto;
         padding-top:-20px;
-		margin-left:3vw;
+		margin-left:4vw;
         align-items:flex-start;
         background:transparent;
 	}
@@ -96,7 +97,7 @@ const Body = Styled.div`
 }
 `
 
-const imagenes = [wiener, mindray, metrolab, deltalab, diestro, radiometer, labix, opti, deltalab, diestro, mindray, radiometer, wiener, labix, metrolab, opti, deltalab, labix, diestro, mindray, radiometer, wiener, metrolab, opti]
+const imagenes = [wiener, mindray, metrolab, deltalab, mindray2, diestro, radiometer, labix, opti, deltalab, diestro, mindray, radiometer, wiener, labix, metrolab, opti, deltalab, labix, diestro, mindray, radiometer, wiener, metrolab, opti]
 
 const listImagenes = imagenes.map((img) => <div className="slide"><img src={img} /></div>)
 
