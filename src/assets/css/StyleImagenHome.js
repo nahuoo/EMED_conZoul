@@ -102,8 +102,9 @@ const PageHeader = styled.div `
         max-width: 100vh;
     }
    
-
+    
 }
+
     h2{
         font-family: 'Roboto', sans-serif;
         font-size:1rem;
@@ -150,7 +151,7 @@ const PageHeader = styled.div `
 
         .contenedor{
         width:350px;
-        height:130px;
+        height:auto;
         padding:3px;
         padding-top:0rem;
         top:-100px;
@@ -189,17 +190,23 @@ const PageHeader = styled.div `
     }
 
     /*tablet*/
-    
-    @media screen and (max-height: 300px) {
+
+    @media screen and (max-height: 320px) {
         height: 150vh; 
+
     .contenedor{
         top:-65px;
         height: 110px;
     }
-        span{
+    .imagen{
+        width: 2vw;
+    }
+
+    span{
         position: absolute;
         top:20vh;
         left:27vw;
+        max-width:10px;
     }
 
     .descripcion{
