@@ -33,7 +33,7 @@ const validacion = (e) => {
   
   let Mensaje = `nombre=${event.target[0].value}&localidad=${event.target[1].value}&tipo=${event.target[2].value}&pacientes=${event.target[3].value}&email=${event.target[4].value}&mensaje=${event.target[5].value}`
   
-  fetch('http://192.168.0.179:4000/email', {
+  fetch('https://emed1backend.herokuapp.com/email', {
    method: 'post',
    headers: {'Content-Type':'application/x-www-form-urlencoded'},
    body: Mensaje
