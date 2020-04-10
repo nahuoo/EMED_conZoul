@@ -38,7 +38,8 @@ const StyledAbout = styled.div `
 /* tablet */
     @media screen and (min-width:400px) {
       .body{
-        height: 200vh;
+        height: auto;
+
       }
     }
 /* desktop */ 

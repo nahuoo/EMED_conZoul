@@ -21,8 +21,14 @@ const Body = Styled.div`
     width:100%;
     top:81vh;
 	
+@media screen and (max-height: 500px) {
+	height: auto;	
+	top:100vh;
+}
+	
 @media screen and (max-width: 500px) {
-    top:100vh;
+	height: auto;	
+	top:100vh;
 }
 
 @media screen and (max-height: 300px) {

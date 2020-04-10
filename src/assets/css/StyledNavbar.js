@@ -16,6 +16,7 @@ const StyledNav = styled.nav`
   font-family: 'Neuton', serif;
   font-size: 110%;
   color: white;
+  z-index: 1500;
 
 /* /////////////////////////////////////////////// */
 /*                    LOGO                         */

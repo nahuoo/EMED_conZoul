@@ -12,7 +12,9 @@ const Contact = () => {
       </div>
       <div className='informacion'>
         <ul>
-          <li><i class="fas fa-phone"></i> Teléfono: +54 9 (0223)473-8018</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:02234738018" target="_blank" rel="noopener noreferrer">
+                Teléfono: +54 9 (0223)473-8018
+              </a> </li>
           <li><i class="fas fa-route"></i> <a
                 target="_blank"
                 href="https://www.google.com.ar/maps/place/Chaco+801,+B7600BKQ+Mar+del+Plata,+Buenos+Aires/@-37.9833588,-57.5609986,17z/data=!4m5!3m4!1s0x9584d95a18c9fcd9:0x9d2f9ec1205da2e9!8m2!3d-37.9829465!4d-57.5590997"

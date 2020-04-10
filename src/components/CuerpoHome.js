@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Bodyy = styled.div`
   display: grid;
-  grid-template-columns: repeat(3,250px);
+  grid-template-rows: repeat(auto-fit, minmax(50px, 150px));
   grid-gap: 2vh;
   background: #2a2f33;
   align-items: center;
@@ -13,7 +13,7 @@ const Bodyy = styled.div`
   padding:5%;
   overflow: hidden;
   background: #303136;
-  height: 40vh;
+  height: auto;
   
 
 @media screen and (max-width:500px){
@@ -24,7 +24,11 @@ const Bodyy = styled.div`
   width: 90vw;
   height:100vh;
 }
-
+@media screen and (max-width:670px){
+  display: flex;
+  flex-direction: column;
+  
+}
   h1{
     grid-column: 1/4;
     text-align:center;
