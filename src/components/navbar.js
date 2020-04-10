@@ -89,7 +89,7 @@ const Navbar = () => {
             <span className="arrow"></span> 
           </p>
           <div className={`productos ${products ? 'activeProds' : 'hiddenProds' }`}>
-            <ul>
+            <ul onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
               <li>Agitadores</li>
               <li>Autoanalizadores quimica clínica</li>
               <li>Baño termicos</li>
