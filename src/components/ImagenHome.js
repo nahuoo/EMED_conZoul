@@ -1,5 +1,4 @@
 import React from "react"
-import WavesSection from '../components/waves.js'
 import PageHeader from '../assets/css/StyleImagenHome'
 import ScrollMarcas from './ScrollMarcas'
 import { Link } from 'react-router-dom'

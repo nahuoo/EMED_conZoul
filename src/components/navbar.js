@@ -84,12 +84,12 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <p className="link" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+          <button className="link"  onFocus={handleEnter} onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
             Productos
             <span className="arrow"></span> 
-          </p>
+          </button>
           <div className={`productos ${products ? 'activeProds' : 'hiddenProds' }`}>
-            <ul onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+            <ul  onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
               <li>Agitadores</li>
               <li>Autoanalizadores quimica clínica</li>
               <li>Baño termicos</li>

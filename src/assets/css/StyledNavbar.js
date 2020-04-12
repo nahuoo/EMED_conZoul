@@ -105,6 +105,8 @@ const StyledNav = styled.nav`
     color: white;
     letter-spacing: 1pt;
     transition: all 0.2s ease 0s;
+    border: none;
+    background: none;
     
   }
   ul li:last-child{
@@ -128,14 +130,7 @@ const StyledNav = styled.nav`
     transform: translateY(-56%) translateX(43%) scale(0);
     opacity: 0%;
   }
-  .activeProds{
-    opacity: 100%;
-    z-index: 2;
-  }
-  .hiddenProds{
-    opacity: 0%;
-    z-index: -2;
-  }
+  
   .productos{
     position: absolute;
     background: rgba(22, 161, 178, 0.8);
@@ -143,6 +138,9 @@ const StyledNav = styled.nav`
     right: 0;
     padding: 5vw 10vw;
     transition: all 0.6s ease-in;
+    user-select:none;
+    cursor:pointer;
+
     ul {
       display: flex;
       flex-direction: column;
@@ -154,7 +152,18 @@ const StyledNav = styled.nav`
       padding-bottom: 2vw;
     }
   }
-
+  .activeProds{
+    opacity: 100%;
+    -khtml-opacity: 100%;
+    z-index: 2;
+    -webkit-transform: translateX(0%);
+  }
+  .hiddenProds{
+    opacity: 0%;
+    -khtml-opacity: 0%;
+    z-index: -5;
+    -webkit-transform: translateX(150%)
+  }
   
 
 
