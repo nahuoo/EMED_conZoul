@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
+
 const StyledNav = styled.nav`
 /* /////////////////////////////////////////////// */
 /*                    GENERAL                      */
 /* /////////////////////////////////////////////// */
+  transition: 1.5s ease;
   position: fixed;
   width: 97vw;
   height: 9vw;
@@ -12,31 +14,59 @@ const StyledNav = styled.nav`
   justify-content: flex-end; 
   align-items: center;
   z-index: 1;
-  background: ${(props) => props.background|| 'rgba(0,0,0,0)'};
-  font-family: 'Neuton', serif;
-  font-size: 110%;
-  color: white;
+  background: ${(props) => props.background|| 'rgba(255,255,255,0.7)'};
+  font-family: 'Overpass', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 5px solid rgba(199, 0, 5, 0.8);
   z-index: 1500;
+  -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+   box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
 
+p {
+  position: absolute;
+  left: -50%;
+  top: 140%;
+  text-decoration:none;
+  font-family: 'Archive', serif;
+  color: #4A4848;  
+}
+span {
+  position: absolute;
+  left: -50%;
+  top:90%;
+  text-decoration:none;
+  font-family: 'Archive', serif;
+  color: #4A4848;
+}
+button{
+  font-family: 'Overpass', sans-serif;
+}
 /* /////////////////////////////////////////////// */
 /*                    LOGO                         */
 /* /////////////////////////////////////////////// */
 .logo{
     position: absolute;
+    left:45%;
+    bottom:35%;
+    justify-content:center;
+    margin:0;
     height: 8vw; 
-    top: 0.5vw;
-    left: 5vw;
+    text-decoration:none;
+    font-style: normal;
   }
   .logo img {
     max-width: 150%;
     max-height: 150%;
   }
   .title{
+    font-weight: normal;
+    font-style: normal;
     position: relative;
-    cursor: pointer;
     padding-top: 3px;
     font-family: 'Neuton', serif;
-    font-size:1.2rem;
+    font-size:1.3rem;
     bottom: 4.1vw;
     left: 2vw;
     letter-spacing: 0.5pt;
@@ -62,9 +92,10 @@ const StyledNav = styled.nav`
   .burger div{
    width:30px;
    height:5px;
-   background-color: white;
+   border-radius: 30%;
+   background-color: black;
    margin:5px;
-   transition: all 0.5s ease-in-out;
+   transition: all 0.2s ease-in-out;
   }
   .on1{
     transform: translateY(10px) rotate(135deg);
@@ -79,15 +110,17 @@ const StyledNav = styled.nav`
 /*                    MENU                         */
 /* /////////////////////////////////////////////// */
   .ListaLink{
+    font-weight: normal;
     display: flex;
     position: fixed;
     flex-direction: column;
-    background: rgba(22, 161, 178,0.8);
+    background: rgba(75, 166, 245,0.8);
     top: 15vw;
     padding: 5vw 10vw;
     transition: all 0.5s ease-in;
   }
   .ListaLink li{
+    font-weight: normal;
     width: 80vw;
     text-align: center;
     border-bottom: 1px solid white;
@@ -133,13 +166,14 @@ const StyledNav = styled.nav`
   
   .productos{
     position: absolute;
-    background: rgba(22, 161, 178, 0.8);
+    background: rgba(255,255,255, 1);
     top: 0;
     right: 0;
     padding: 5vw 10vw;
-    transition: all 0.6s ease-in;
+    transition: all 0.3s ease-in;
     user-select:none;
     cursor:pointer;
+    opacity: 0;
 
     ul {
       display: flex;
@@ -153,14 +187,14 @@ const StyledNav = styled.nav`
     }
   }
   .activeProds{
-    opacity: 100%;
-    -khtml-opacity: 100%;
+    opacity: 1;
+    -khtml-opacity: 1;
     z-index: 2;
     -webkit-transform: translateX(0%);
   }
   .hiddenProds{
-    opacity: 0%;
-    -khtml-opacity: 0%;
+    display:none;
+    -khtml-opacity: 0;
     z-index: -5;
     -webkit-transform: translateX(150%)
   }
@@ -172,7 +206,7 @@ const StyledNav = styled.nav`
 /* /////////////////////////////////////////////// */
 @media (min-width: 650px) {
   width: 100vw;
-  height: 2.5vw;
+  height: 3vw;
 
   .logo{
     height: 5vw; 
@@ -224,19 +258,23 @@ const StyledNav = styled.nav`
 /*                    Desktop                      */
 /* /////////////////////////////////////////////// */
 @media (min-width: 1000px) {
-  height: 3vw;
+  height: 5vw;
   padding: 0.3vw;
   padding-bottom: 0.7vw;
 /* LOGO */
   .logo{
-    height: 2.4vw;
+    height: 3vw;
     top: 0;
+    left: 7%;
   }
   .title{
-    bottom: 1.3vw;
-    font-size:1.5rem;
+    font-weight: lighter;
+    bottom: 1vw;
+    font-size:1.8rem;
     left: 1vw;
-    color: #fff;
+    color:black;
+    text-decoration: none;
+    
   }
   .burger{
     display:none;
@@ -254,7 +292,7 @@ const StyledNav = styled.nav`
     background: none;
     top: 0;
     padding: 0;
-    transition: all 0.5s ease-in;
+    transition: all 0.8s ease-in;
     margin-right: 3%;
     
   }
@@ -272,9 +310,9 @@ const StyledNav = styled.nav`
   .link{
     margin-top: 0;
     text-decoration: none;
-    font-size: 100%;
+    font-size: 80%;
     font-weight: initial;
-    color: white;
+    color: black;
     letter-spacing: 1pt;
     transition: all 0.2s ease 0s;
     border-radius: 5px;
@@ -282,6 +320,7 @@ const StyledNav = styled.nav`
   }
   .icono {
     margin: 0 1vw;
+    
     display: inline;
     padding: 17px 10px 7px;
   }
@@ -303,7 +342,7 @@ const StyledNav = styled.nav`
   }
   .productos{
     position: absolute;
-    background: rgba(22, 161, 178, 0.8);
+    background: rgba(255,255,255, 0.77);
     width: 17vw;
     font-size:0.9em;
     padding-bottom: 1vw;

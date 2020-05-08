@@ -1,64 +1,50 @@
-import styled from 'styled-components'
+import Styled from 'styled-components'
 
-const StyledModal = styled.div ` 
-    
-        display: ${(props) => props.modal|| 'none'};
-        
-    .modal{
-        margin: 0px;
-        padding: 0px;
-        position:fixed;
-        background: black; 
-        height: 100%;
-           
-    }
+const StyledModal = Styled.div`
+ 
+    display: ${(props) => props.visible ? 'block' : 'none'}; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: ${(props) => props.visible ? '1' : '-10'}; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  
 
-    .rectangulo{ 
-        
-        background: #273441;
-        position:fixed;
-        display:flex;
-        align-items:center;
-        flex-direction:column;
-        justify-content: space-around;
-        text-align: center;
-        padding: 10px;
-        height: 50%;
-        width:50%;
-        top:20vh;
-        left:25vw;
-        border: 2px solid #E3E3E3;
-        border-radius: 30px;
-        box-shadow: 20px 20px 30px -5px rgba(0, 0, 0, 0.2);
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+   .snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
 
-        
-
-    }
-
-    h2{
-        font-size: 2em;
-        font-family:'Neuton', serif;
-        color: white;
-        
-    }
-
-    p{
-        font-family:'Neuton', sans-serif;
-        color: white;
-        font-size: 1.2em;
-    }
-
-    button{
-        width: 100px;
-        background-color: white;
-        border: 1.5px solid #E3E3E3;
-        border-radius: 30px;
-        cursor: pointer;
-        color: #2c2c2c;
-        :hover{
-            border: 2px solid red;}
-      
-    }
-`
-
-export default StyledModal
+  `
+  export default StyledModal

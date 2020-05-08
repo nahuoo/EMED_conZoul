@@ -2,13 +2,14 @@ import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
   position: relative;
+  height:50vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background: #273441;
   padding: 7.5vh 0;
-  color: #f2f2f2;
+  color: #bab6b6;
 
   ul {
     height: 18vh;
@@ -17,9 +18,9 @@ const StyledFooter = styled.footer`
   ul li{
     padding: 0 0 0.5rem;
     margin:0 0 0.5rem;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 9.5px;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Archivo', sans-serif;
     letter-spacing: 0.5pt;
     
   }
@@ -42,9 +43,14 @@ const StyledFooter = styled.footer`
   .direction {
     line-height: 1.5; 
   }
+  .titulo{
+    color:white;
+    font-size:10px;
+  }
 
   @media (min-width: 650px) {
     padding: 10vh;
+    flex-direction: row;
 
     ul{
       padding: 5px
@@ -77,6 +83,10 @@ const StyledFooter = styled.footer`
       letter-spacing: 1.5pt;
     }
 
+    .titulo{
+    color:white;
+    font-size:20px;
+  }
   }
  
 `

@@ -16,10 +16,10 @@ const Body = Styled.div`
 	background: black;
 	display: flex;
 	justify-content: center;
-	height: 20vh;
+	height: 17vh;
     position:absolute;
     width:100%;
-    top:81vh;
+    top:12vh;
 	
 @media screen and (max-height: 500px) {
 	height: auto;	
@@ -27,8 +27,8 @@ const Body = Styled.div`
 }
 	
 @media screen and (max-width: 500px) {
-	height: auto;	
-	top:100vh;
+	height: 16vh;	
+	top:5vh;
 }
 
 @media screen and (max-height: 300px) {

@@ -9,6 +9,9 @@ function Footer() {
     <StyledFooter>
         <div>
           <ul>
+            <li className='titulo'>
+              Nosotros
+            </li>
             <li>
               <Link to="/contact">
                 Contacto
@@ -33,6 +36,9 @@ function Footer() {
         </div>
         <div>
           <ul>
+          <li className='titulo'>
+              Contacto
+            </li>
             <li>
               <i className="fa fa-envelope-o icon" aria-hidden="true">&nbsp;</i>
               <a href="mailto:unoelectromedicina@gmail.com" target="_blank" rel="noopener noreferrer">

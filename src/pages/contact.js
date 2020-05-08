@@ -12,8 +12,8 @@ const Contact = () => {
       </div>
       <div className='informacion'>
         <ul>
-          <li><i class="fas fa-phone"></i> <a href="tel:02234738018" target="_blank" rel="noopener noreferrer">
-                Teléfono: +54 9 (0223)473-8018
+          <li><i class="fas fa-phone"></i> <a href="tel:02234739018" target="_blank" rel="noopener noreferrer">
+                Teléfono: (0223)473-9018
               </a> </li>
           <li><i class="fas fa-route"></i> <a
                 target="_blank"

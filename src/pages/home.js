@@ -3,12 +3,15 @@ import ImagenHome from '../components/ImagenHome'
 import CuerpoHome from '../components/CuerpoHome'
 import Marcas from '../components/Marcas'
 import Formulario from '../components/Formulario'
+import Servicios from '../components/Servicios'
 import styled from 'styled-components'
 import fotoTaller from '../assets/img/lab3.jpg';
+import fondo from '../assets/img/fondo.jpg'
 
 const Transparente = styled.div `
   background: rgba(255, 255, 255, 0.4);
-  background-image: url("${fotoTaller}");
+  
+  background-image: url("${fondo}");
   background-position: center;
   background-attachment: fixed; 
   background-repeat: no-repeat; 
@@ -16,7 +19,14 @@ const Transparente = styled.div `
  
   
 `
-
+const FondoFoto = styled.div `
+  background: rgba(255, 255, 255, 0.4);
+  background-image: url("${fotoTaller}");
+  background-position: center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+`
 
 /*  El Home */
 const Home = () => {
@@ -25,7 +35,10 @@ const Home = () => {
     <Transparente >
       <ImagenHome />
       <Marcas />
-      <CuerpoHome />
+      <Servicios />
+      <FondoFoto>
+        <CuerpoHome />
+      </FondoFoto>
       <Formulario />
     </Transparente>
   )

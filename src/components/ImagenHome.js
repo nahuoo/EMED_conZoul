@@ -14,14 +14,23 @@ function ImagenHome() {
     <PageHeader> 
         <div className='contenedor'>                          
           <h1>Uno Electromedicina</h1>
-          <h2>Servicio técnico y venta de equipamiento e insumos de laboratorio.</h2>            
+                    
             <Link className='button' to="/contact" >                    
             Contáctenos
             </Link >          
         </div>
-      <span> 
-          <img  src={require('../assets/img/logouno.png')} alt='logo'/> 
-        </span>
+        <spare className='info' >
+          <ul>
+           <li>
+            <h2>Servicio técnico y venta de equipamiento e insumos de laboratorio.</h2> 
+            </li>
+            <li>
+            <i class="fas fa-phone"></i> <a href="tel:02234739018" target="_blank" rel="noopener noreferrer">
+                (0223) 473-9018
+                </a>
+              </li>
+            </ul> 
+        </spare>
         <div className='descripcion'>
           <h3>Servicio técnico oficial - Mantenimientos preventivos - Alquiler / Comodato de equipos </h3>
           <h3>Reactivos - Descartables - Consumibles para todas las marcas</h3>

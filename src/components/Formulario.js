@@ -7,7 +7,7 @@ import StyledModal from '../assets/css/StyledModal'
 const Formulario = () => {
 
   /*state del Modal */
-  const [visible, setVisible] = React.useState("none")
+  const [visible, setVisible] = React.useState(false)
   
   //const [email, setEmail] = React.useState('')
   //const [error, setError] = React.useState('false')
@@ -26,21 +26,20 @@ const validacion = (e) => {
   setError(false)
 }
 */
-
+ const mostrar = () => setVisible(!visible)
  const handleSubmit = (event) => { 
   
-  event.preventDefault()
   
   let Mensaje = `nombre=${event.target[0].value}&localidad=${event.target[1].value}&tipo=${event.target[2].value}&pacientes=${event.target[3].value}&email=${event.target[4].value}&mensaje=${event.target[5].value}`
   
-  fetch('http://192.168.0.179:4000/email', {
+  fetch('http://localhost:4000/email', {
    method: 'post',
    headers: {'Content-Type':'application/x-www-form-urlencoded'},
    body: Mensaje
   })
   .then(response => response.text())
-  .then(data => console.log(data));
-  
+  .then(data => console.log(data))
+  .then(mostrar());
   }
   
   /*logica del modal*/
@@ -112,7 +111,7 @@ const validacion = (e) => {
       className='submit' 
       type='submit' 
       value='Enviar'
-      onClick={() => setVisible(!visible)}
+      onClick={(e)=> e.preventDefault()}
       />
     </form>
     <StyledModal modal={visible}>
@@ -124,7 +123,7 @@ const validacion = (e) => {
             <p>Nos contactaremos con usted a la brevedad.</p>
             <button 
             type=''
-            onClick={()=>setVisible(!visible)}
+            onClick={() => setVisible(!visible)}
             >
             cerrar
             </button>

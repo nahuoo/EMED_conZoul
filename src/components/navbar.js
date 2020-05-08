@@ -5,8 +5,7 @@ import StyledNav from '../assets/css/StyledNavbar'
 
 
 const Navbar = () => {
-  const [ navbarColor, setNavbarColor ] = React.useState('rbga(0,0,0,0)')
-  const [ navbarAnimation, setNavbarAnimation ] = React.useState('')
+  const [ navbarColor, setNavbarColor ] = React.useState('rgba(255,255,255, 1)')
   const [ toggle,setToggle ] = React.useState(false)
   const [ products, setProducts ] = React.useState(false)
   React.useEffect(() => {
@@ -16,15 +15,15 @@ const Navbar = () => {
         document.documentElement.scrollTop > 100 ||
         document.body.scrollTop > 100
       ) {
-        setNavbarColor('rgba(22, 161, 178,0.8)')
-        setNavbarAnimation('Animation')
-
+        setNavbarColor('rgba(255,255,255, 0.77)')
+        
+        
       } else if (
         document.documentElement.scrollTop < 101 ||
         document.body.scrollTop < 101
       ) {
-        setNavbarColor('rgba(0,0,0,0)')
-        setNavbarAnimation('')
+        setNavbarColor('rgba(255,255,255, 1)')
+    
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -46,16 +45,22 @@ const Navbar = () => {
   }
   
   return(
-      <StyledNav background={navbarColor} className={navbarAnimation}>
+      <StyledNav background={navbarColor} >
       <div className="logo">
         <NavLink
           to="/"
           exact>
+            <span>Uno</span>
             <img src={require('../assets/img/logouno.png')} alt='logo'/>
-        </NavLink>
-        <span className="title" to="/" >Uno Electromedicina</span>     
+            <p>Electromedicina</p>
+        </NavLink>            
       </div>
        <ul className={`ListaLink ${toggle ? 'active' : 'hidden' }`}>
+         <li>
+           <a className='link' href='https://www.google.com.ar/maps/dir//Chaco+801,+B7600BKQ+Mar+del+Plata,+Buenos+Aires,+Argentina/@-37.982938,-57.5634771,16z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x9584d95a18c9fcd9:0x9d2f9ec1205da2e9!2m2!1d-57.5590997!2d-37.9829465!3e2'>
+           <i class="fas fa-map-marker-alt"></i> ¿Cómo llegar?
+           </a>
+         </li>
         <li>
           <NavLink
             to="/about"
