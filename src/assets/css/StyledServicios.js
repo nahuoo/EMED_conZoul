@@ -1,12 +1,13 @@
 import Styled from 'styled-components'
 
 export const ServiciosWrapper = Styled.div `
-    height: 100vh;
+    height: 50vh;
     background: white;
     display:flex;
     padding: 15vh;
     justify-content: center;
     align-items: flex-start;
+    
     
     
 `

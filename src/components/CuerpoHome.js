@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Bodyy = styled.div`
+  
+ 
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(50px, 150px));
   grid-gap: 2vh;
@@ -9,7 +11,7 @@ const Bodyy = styled.div`
   align-items: center;
   justify-content: center;
   width: 90%;
-  margin-top: 0vh;
+  margin-top: 40vh;
   padding:5%;
   overflow: hidden;
   background: #303136;
@@ -66,24 +68,10 @@ const Bodyy = styled.div`
   `
 
 const CuerpoHome = () => {
-  let animacion = React.createRef();
-
-  React.useEffect(() => {
-    if (window.innerWidth > 991) {
-      const updateScroll = () => {
-        let windowScrollTop = window.pageYOffset / 8;
-        animacion.current.style.transform =
-          "translate3d(0," + windowScrollTop + "px,0)";
-      };
-      window.addEventListener("scroll", updateScroll);
-      return function cleanup() {
-        window.removeEventListener("scroll", updateScroll);
-      };
-    }
-  });
+  
 
   return(
-    <Bodyy ref={animacion}>
+    <Bodyy>
       <h1>Consulta por nuestras categorías</h1>
       <div>Quimica clínica</div>
       <div>Gases en sangre</div>

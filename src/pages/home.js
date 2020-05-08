@@ -4,6 +4,7 @@ import CuerpoHome from '../components/CuerpoHome'
 import Marcas from '../components/Marcas'
 import Formulario from '../components/Formulario'
 import Servicios from '../components/Servicios'
+import Noticias from '../components/Noticias'
 import styled from 'styled-components'
 import fotoTaller from '../assets/img/lab3.jpg';
 import fondo from '../assets/img/fondo.jpg'
@@ -35,8 +36,9 @@ const Home = () => {
     <Transparente >
       <ImagenHome />
       <Marcas />
-      <Servicios />
       <FondoFoto>
+        <Servicios />
+        <Noticias />
         <CuerpoHome />
       </FondoFoto>
       <Formulario />
