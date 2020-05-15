@@ -22,7 +22,7 @@ function ImagenHome() {
         <spare className='info' >
           <ul>
            <li>
-            <h2>Servicio técnico y venta de equipamiento e insumos de laboratorio.</h2> 
+            <button className='buttonNovedades' onClick={ ()=>document.getElementById("noticias").scrollIntoView({ block: 'start',  behavior: 'smooth' }) }>NOVEDADES<i class="far fa-arrow-alt-circle-down"></i></button>
             </li>
             <li>
             <i class="fas fa-phone"></i> <a href="tel:02234739018" target="_blank" rel="noopener noreferrer">

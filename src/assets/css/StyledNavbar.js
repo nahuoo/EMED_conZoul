@@ -17,7 +17,7 @@ const StyledNav = styled.nav`
   background: ${(props) => props.background|| 'rgba(255,255,255,0.7)'};
   font-family: 'Overpass', sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   border-bottom: 5px solid rgba(199, 0, 5, 0.8);
   z-index: 1500;
   -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
@@ -26,16 +26,16 @@ const StyledNav = styled.nav`
 
 p {
   position: absolute;
-  left: -50%;
-  top: 140%;
+  left: 0%;
+  top: 150%;
   text-decoration:none;
   font-family: 'Archive', serif;
   color: #4A4848;  
 }
 span {
   position: absolute;
-  left: -50%;
-  top:90%;
+  left: -55%;
+  top:150%;
   text-decoration:none;
   font-family: 'Archive', serif;
   color: #4A4848;

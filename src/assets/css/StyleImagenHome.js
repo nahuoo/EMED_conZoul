@@ -20,6 +20,8 @@ const PageHeader = styled.div `
     .info{
         display:block;
         background: white;
+        height: 4em;
+        width: 35%;
         color: black;
         padding:10px;
         -webkit-box-shadow: -5px 5px 19px -2px rgba(0,0,0,0.75);
@@ -74,6 +76,25 @@ const PageHeader = styled.div `
         width: 16vw;
         font-size: 1em;
         margin-top:2px;
+        letter-spacing:1;
+        cursor:pointer;
+            :hover{
+                background: black;
+                border: 2px solid black;
+                color: white;
+                }
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .buttonNovedades{
+        position:relative;
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+        height: 2rem;
+        width: 12vw;
+        font-size: 1em;
+        margin: 2px 2px;
         letter-spacing:1;
         cursor:pointer;
             :hover{
