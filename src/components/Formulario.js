@@ -32,7 +32,7 @@ const validacion = (e) => {
   
   let Mensaje = `nombre=${event.target[0].value}&localidad=${event.target[1].value}&tipo=${event.target[2].value}&pacientes=${event.target[3].value}&email=${event.target[4].value}&mensaje=${event.target[5].value}`
   
-  fetch('http://localhost:4000/email', {
+  fetch('http://52.67.87.217:3000/email', {
    method: 'post',
    headers: {'Content-Type':'application/x-www-form-urlencoded'},
    body: Mensaje
