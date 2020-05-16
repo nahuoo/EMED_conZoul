@@ -11,6 +11,14 @@ export const ServiciosWrapper = Styled.div `
     justify-content: center;
     align-items: flex-start;
     
+    @media screen and (max-width: 500px) {
+        height: 180vh;
+        flex-direction:column;
+        padding-top: 20vh;
+        align-items: center;
+        justify-content: center;
+        
+    }
     
     
 `
@@ -37,4 +45,13 @@ export const Card = Styled.div `
         font-size: 8rem;
         margin-bottom: 20px;
     }
+
+    @media screen and (max-width: 500px) {
+        height: auto;
+        margin:0;
+        padding-top: 10vh;
+        width:60%;
+        margin-bottom: 10vh;
+    }
+    
 `

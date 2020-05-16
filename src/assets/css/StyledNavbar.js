@@ -24,22 +24,13 @@ const StyledNav = styled.nav`
   -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
    box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
 
-p {
-  position: absolute;
-  left: 0%;
-  top: 150%;
-  text-decoration:none;
-  font-family: 'Archive', serif;
-  color: #4A4848;  
-}
-span {
-  position: absolute;
-  left: -55%;
-  top:150%;
-  text-decoration:none;
-  font-family: 'Archive', serif;
-  color: #4A4848;
-}
+   span{
+      display:none;
+    }
+    p{
+      display:none
+    }
+
 button{
   font-family: 'Overpass', sans-serif;
 }
@@ -48,7 +39,7 @@ button{
 /* /////////////////////////////////////////////// */
 .logo{
     position: absolute;
-    left:45%;
+    left:40%;
     bottom:35%;
     justify-content:center;
     margin:0;
@@ -267,15 +258,24 @@ button{
     top: 0;
     left: 7%;
   }
-  .title{
-    font-weight: lighter;
-    bottom: 1vw;
-    font-size:1.8rem;
-    left: 1vw;
-    color:black;
-    text-decoration: none;
-    
-  }
+  p {
+  display:block;
+  position: absolute;
+  left: 0%;
+  top: 150%;
+  text-decoration:none;
+  font-family: 'Archive', serif;
+  color: #4A4848;  
+}
+span {
+  display:block;
+  position: absolute;
+  left: -55%;
+  top:150%;
+  text-decoration:none;
+  font-family: 'Archive', serif;
+  color: #4A4848;
+}
   .burger{
     display:none;
   }
@@ -369,6 +369,8 @@ button{
       padding-bottom: 1vw;
       margin-bottom: 0; 
     } 
+
+    
   }
 
 }

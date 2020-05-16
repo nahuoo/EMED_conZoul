@@ -18,8 +18,10 @@ const Vsg = Styled.div`
   margin-bottom: -50vh;
 
   img{
-    position:
     height: 30vh;
+  }
+  @media screen and (max-width: 500px) {
+    display:none;
   }
 `
 
@@ -27,6 +29,9 @@ const Png = Styled.div`
   display:flex;
   background: white;
   height:100vh;
+  @media screen and (max-width: 500px) {
+    display:none;
+  }
   
 `
 
@@ -36,8 +41,8 @@ const NoticiasDiv = Styled.div`
     padding-left: 12%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 0vh;
     h2{
+      left: 10px;
       font-size: 2em;
       margin-bottom: .5em;
     }
@@ -46,9 +51,31 @@ const NoticiasDiv = Styled.div`
       color:red;
     }
     p{
+      left:10px;
       margin-top:.5em;
     }
+    overflow:hidden;
 
+    @media screen and (max-width: 500px) {
+        height:200vh;
+        display:flex;
+        flex-direction:column;
+        padding-left:20px;
+
+        align-items:center;
+        justify-content: center;
+      img{
+      height: 300px;
+      }
+      h2{
+      
+      font-size: 2em;
+      margin-bottom: .5em;
+    }
+    p{
+      margin-top:.5em;
+    }
+    }
 `
 
 const Subtitulo = Styled.p`
