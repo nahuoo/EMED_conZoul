@@ -8,30 +8,18 @@ const Formulario = () => {
 
   /*state del Modal */
   const [visible, setVisible] = React.useState(false)
-  
-  //const [email, setEmail] = React.useState('')
-  //const [error, setError] = React.useState('false')
 
-  /* logica de validacion del mail 
-const validacion = (e) => {
-  setEmail(e.target[4].value)
-  if (email.includes('@') && email.includes('.com')) {
-    handleSubmit(e)
-  } else {
-    setError(true)
-  }
-  if (error === true) {
-    alert('El email debe ser válido')
-  }
-  setError(false)
-}
-*/
- const mostrar = () => setVisible(!visible)
+ const handleClick = () => {
+   
+  
+   window.location = 'http://unoelectromedicina.com';
+   console.log(visible)
+ }
  const handleSubmit = (event) => { 
   
-  
+  event.preventDefault();
   let Mensaje = `nombre=${event.target[0].value}&localidad=${event.target[1].value}&tipo=${event.target[2].value}&pacientes=${event.target[3].value}&email=${event.target[4].value}&mensaje=${event.target[5].value}`
-  
+  /*http://52.67.87.217 */
   fetch('http://52.67.87.217:3000/email', {
    method: 'post',
    headers: {'Content-Type':'application/x-www-form-urlencoded'},
@@ -39,7 +27,7 @@ const validacion = (e) => {
   })
   .then(response => response.text())
   .then(data => console.log(data))
-  .then(mostrar());
+  .then(setVisible(!visible))
   }
   
   /*logica del modal*/
@@ -110,31 +98,24 @@ const validacion = (e) => {
     <input 
       className='submit' 
       type='submit' 
-      value='Enviar'
-      onClick={(e)=> e.preventDefault()}
-      />
+      value='Enviar'  
+    />
     </form>
-    <StyledModal modal={visible}>
-        
-    <div className='modal'></div>
+
+    <StyledModal visible={visible}>    
+     <div className='modal'></div>
         <div className='rectangulo'>
         
             <h2>Envío realizado</h2>
             <p>Nos contactaremos con usted a la brevedad.</p>
             <button 
-            type=''
-            onClick={() => setVisible(!visible)}
+            onClick={handleClick}
             >
             cerrar
             </button>
-
-        
       </div>
-
-     
-    
-  </StyledModal>
-    </StyledFormulario>
+    </StyledModal>
+  </StyledFormulario>
   )
 }
 
