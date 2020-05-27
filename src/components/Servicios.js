@@ -2,8 +2,11 @@ import React from 'react'
 import {ServiciosWrapper, Card} from '../assets/css/StyledServicios'
 import FadeIn from './FadeIn'
 
+
+
 const Servicios = () => {
     return(
+        <>
         <ServiciosWrapper>
             <FadeIn>
                 <Card>
@@ -33,6 +36,7 @@ const Servicios = () => {
                 </Card>
             </FadeIn>
         </ServiciosWrapper>
+        </>
     )
 }
 

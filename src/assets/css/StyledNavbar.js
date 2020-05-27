@@ -248,16 +248,7 @@ button{
 /* /////////////////////////////////////////////// */
 /*                    Desktop                      */
 /* /////////////////////////////////////////////// */
-@media (min-width: 1000px) {
-  height: 5vw;
-  padding: 0.3vw;
-  padding-bottom: 0.7vw;
-/* LOGO */
-  .logo{
-    height: 3vw;
-    top: 0;
-    left: 7%;
-  }
+@media (min-width: 1300px) {
   p {
   display:block;
   position: absolute;
@@ -276,6 +267,19 @@ span {
   font-family: 'Archive', serif;
   color: #4A4848;
 }
+}
+
+@media (min-width: 1024px) {
+  height: 5vw;
+  padding: 0.3vw;
+  padding-bottom: 0.7vw;
+/* LOGO */
+  .logo{
+    height: 3vw;
+    top: 0;
+    left: 7%;
+  }
+  
   .burger{
     display:none;
   }
@@ -310,7 +314,7 @@ span {
   .link{
     margin-top: 0;
     text-decoration: none;
-    font-size: 80%;
+    font-size: 70%;
     font-weight: initial;
     color: black;
     letter-spacing: 1pt;

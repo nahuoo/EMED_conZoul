@@ -19,7 +19,7 @@ const Body = Styled.div`
 	height: 17vh;
     position:absolute;
     width:100%;
-    top:12vh;
+    top:75%;
 	
 @media screen and (max-height: 500px) {
 	height: auto;	

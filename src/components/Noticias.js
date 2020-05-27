@@ -2,10 +2,11 @@ import React from 'react'
 import Styled from 'styled-components'
 import imagen from '../assets/img/sd2.jpg'
 import imagen2 from '../assets/img/sd3.jpg'
-import png from '../assets/img/f100.png'
 import FadeIn from './FadeIn'
 import FadeLeft from './FadeLeft'
 import FadeRight from './FadeRight'
+import covid from '../assets/img/covid.png'
+
 
 
 const Vsg = Styled.div`
@@ -14,12 +15,8 @@ const Vsg = Styled.div`
   height: 145vh;
   background: linear-gradient(0deg, rgba(230,230,230,1) 20%, rgba(239,239,239,1) 60%, rgba(255,255,255,1) 100%);
   z-index:-2;
-  margin-top: -50vh;
-  margin-bottom: -50vh;
-
-  img{
-    height: 30vh;
-  }
+  margin-top: -60vh;
+  margin-bottom: -60vh;
   @media screen and (max-width: 500px) {
     display:none;
   }
@@ -55,7 +52,10 @@ const NoticiasDiv = Styled.div`
       margin-top:.5em;
     }
     overflow:hidden;
-
+    img{
+      margin-left: 30%;
+      height: 330px;
+  }
     @media screen and (max-width: 500px) {
         height:200vh;
         display:flex;
@@ -65,7 +65,8 @@ const NoticiasDiv = Styled.div`
         align-items:center;
         justify-content: center;
       img{
-      height: 300px;
+      margin-left: 0%;
+      height: 220px;
       }
       h2{
       
@@ -91,16 +92,18 @@ const Noticias = () => {
         
       
           <Vsg>
-            
+          
           </Vsg>
        
         <Png>
          
         </Png>
-         
                 <NoticiasDiv  id='noticias' >
-                  <h2>Novedades</h2>
+                <h2>Novedades</h2>
                   <div></div>
+                <img src={covid} alt='Covid-19'></img>
+                <div></div>
+                
                  <FadeLeft>
                     <div>
                         <h2>STANDARD F100 Analyzer</h2>

@@ -18,7 +18,9 @@ const PageHeader = styled.div `
   overflow:hidden;
 
     .info{
-        display:block;
+        top: 30%;
+        right: 0%;
+        position:absolute;
         background: white;
         height: 4em;
         width: 35%;
@@ -40,12 +42,12 @@ const PageHeader = styled.div `
         text-align: left;
         position: relative;
         align-items: space-between;  
-        height:21vh;
+        height:25vh;
         padding:2rem;
         padding-top:1rem;
         width:40vw;
         background: rgba(199, 0, 5, 0.8);
-        top: -20px;     
+        top: -15%;     
     }
 
     .imagen{
@@ -63,20 +65,20 @@ const PageHeader = styled.div `
         margin-left:40%;
     }
     .button{
-        position:relative;
+        position: relative;
         text-align: center;
         background-color: transparent;
         border: 2px solid black;
         padding: 4px;
         border-radius: 0px;
         text-decoration: none;
-        color: #F9F8F8;
+        color: black;
         height: 1rem;
-        left:40%;
+        left: 40%;
         width: 16vw;
         font-size: 1em;
-        margin-top:2px;
-        letter-spacing:1;
+        margin-top: 10px;
+        letter-spacing: 1;
         cursor:pointer;
             :hover{
                 background: black;
@@ -92,7 +94,7 @@ const PageHeader = styled.div `
         border: 2px solid black;
         color: black;
         height: 2rem;
-        width: 12vw;
+        width: 13vw;
         font-size: 1em;
         margin: 2px 2px;
         letter-spacing:1;
@@ -109,7 +111,7 @@ const PageHeader = styled.div `
         position:absolute;
         background: rgba(255, 255, 255, 0.5);
         height: 12vh;
-        top: 80vh;
+        top: 70vh;
         width:100%;
     }
 
@@ -131,6 +133,7 @@ const PageHeader = styled.div `
         color: white;
         text-align: left;
         margin-left: 1vw;
+        margin-bottom: 15px;
         
     }
 
