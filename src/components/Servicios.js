@@ -3,11 +3,10 @@ import {ServiciosWrapper, Card} from '../assets/css/StyledServicios'
 import FadeIn from './FadeIn'
 
 
-
 const Servicios = () => {
     return(
         <>
-        <ServiciosWrapper>
+          <ServiciosWrapper>
             <FadeIn>
                 <Card>
                     <i class="fas fa-tools"></i>

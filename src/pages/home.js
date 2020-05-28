@@ -29,12 +29,18 @@ const FondoFoto = styled.div `
   background-size: cover;
 `
 
+const Shop = styled.div `
+  background:white;
+`
+
 /*  El Home */
 const Home = () => {
 
   return (
     <Transparente >
+      
       <ImagenHome />
+      <Shop id="my-store-29380059" />
       <Marcas />
       <FondoFoto>
         <Servicios />
@@ -42,6 +48,7 @@ const Home = () => {
         <CuerpoHome />
       </FondoFoto>
       <Formulario />
+      
     </Transparente>
   )
 }

@@ -91,12 +91,12 @@ const Noticias = () => {
       <>
         
       
-          <Vsg>
-          
+          <Vsg >
+            
           </Vsg>
        
         <Png>
-         
+        
         </Png>
                 <NoticiasDiv  id='noticias' >
                 <h2>Novedades</h2>
