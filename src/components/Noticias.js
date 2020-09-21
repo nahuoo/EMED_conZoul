@@ -100,10 +100,10 @@ const Noticias = () => {
         </Png>
                 <NoticiasDiv  id='noticias' >
                 <h2>Novedades</h2>
-                  <div></div>
+      {/*  <div></div>
                 <img src={covid} alt='Covid-19'></img>
                 <div></div>
-                
+                */}
                  <FadeLeft>
                     <div>
                         <h2>STANDARD F100 Analyzer</h2>
