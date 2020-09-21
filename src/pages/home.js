@@ -44,7 +44,7 @@ const Home = () => {
       <Marcas />
       <FondoFoto>
         <Servicios />
-        <Noticias />
+    {/* <Noticias /> */}
         <CuerpoHome />
       </FondoFoto>
       <Formulario />
